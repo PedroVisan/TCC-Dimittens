@@ -1,0 +1,28 @@
+/* Estilo adicional para os cartões */
+.card {
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Título da página */
+.page-title {
+    font-weight: bold;
+    color: #343a40;
+}
+
+/* Botão de criar comunidade */
+.btn-primary {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Mensagem de sucesso */
+.alert-success {
+    font-size: 14px;
+    text-align: center;
+}

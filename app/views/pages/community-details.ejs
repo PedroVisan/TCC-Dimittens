@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Metadados -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= community.NOME_COMUNIDADE %></title>
+
+    <!-- Bootstrap CSS incluído individualmente -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Seu CSS personalizado (se houver) -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <%- include('../partial/header') %>
+
+    <div class="container mt-4">
+        <h1 class="mb-3"><%= community.NOME_COMUNIDADE %></h1>
+        <p><%= community.BIOGRAFIA_COMUNIDADE %></p>
+
+        <div class="d-flex justify-content-between align-items-center mt-5 mb-3">
+            <h2>Postagens</h2>
+            <a href="/community/<%= community.ID_COMUNIDADE %>/posts/new" class="btn btn-primary">+ Criar Nova Postagem</a>
+        </div>
+
+        <% if (posts.length > 0) { %>
+            <div class="list-group">
+                <% posts.forEach(post => { %>
+                    <a href="/community/<%= community.ID_COMUNIDADE %>/posts/<%= post.ID_POSTAGEM %>" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1"><%= post.TITULO_POSTAGEM %></h5>
+                            <small><%= new Date(post.DATA_POSTAGEM).toLocaleDateString() %></small>
+                        </div>
+                        <p class="mb-1"><%= post.CONTEUDO_POSTAGEM.substring(0, 100) %>...</p>
+                    </a>
+                <% }) %>
+            </div>
+        <% } else { %>
+            <p class="text-muted">Nenhuma postagem encontrada nesta comunidade.</p>
+        <% } %>
+    </div>
+
+    <!-- Bootstrap JS e dependências (se necessário) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,350 @@
+
+    <title>Dimittens</title>
+    <link rel="stylesheet" href="css/comunidade.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+
+  <%- include("../partial/header-psicologo") %>
+
+  <main>
+
+    <article class="buscador">
+         <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" class="search" placeholder="Buscar...">
+    </article>
+    <article class="topicos">
+      <input type="button" class="topicos-button-preenchido" value="Popular">
+      <input type="button" class="topicos-button" value="Todos">
+      <input type="button" class="topicos-button" value="Recentes">
+      <input type="button" class="topicos-button" value="Salvos">
+    </article>
+    <article class="interesses-text">
+      <section class="interesses-titulo">
+        <h3>Interesses</h3>
+      </section>
+      <section class="ver-mais">
+        <h3>Ver mais</h3>
+        <i class="fa-solid fa-chevron-right"></i>
+      </section>
+    </article>
+      <article class="interesses">
+        <section class="interesses-unidades">
+          <img src="imagens/vida-saudavel-top.svg" alt="" class="interesses.box">
+          <span>Vida Saudável</span>
+        </section>
+        <section class="interesses-unidades">
+          <img src="imagens/familia-e-amigos-top.svg" alt="" class="interesses.box">
+          <span>Família e Amigos</span>
+        </section>
+        <section class="interesses-unidades">
+          <img src="imagens/sono-top.svg" alt="" class="interesses.box">
+          <span>Sono</span>
+        </section>
+        <section class="interesses-unidades">
+          <img src="imagens/vicios.jpg" alt="" class="interesses.box">
+          <span>Vícios</span>
+        </section>
+        <section class="interesses-unidades-ultimo">
+          <img src="imagens/depressao.jpeg
+          " alt="" class="interesses.box">
+          <span>Depressão</span>
+        </section>
+      </article>
+      <hr class="divisao-interesses">
+
+      <article class="posts-comunidade">
+        <article class="postagens">
+          <section class="postagem-seçao">
+              <img src="imagens/logo-grupo-borboleta.png" alt="" class="img-comunidade">
+              <section  class="titulo-sub-comunidade">
+                <h2>
+                  Ansiedade
+                </h2>
+                <hr>
+                <h3>
+                  Grupo Borboleta
+                </h3>
+              </section>
+              <section class="unir-se-box">
+                <input type="button" value="Unir-se" class="unir-se">
+              </section>
+          </section>
+          <section class="img-post-box">
+            <img src="imagens/ansiedade-post.svg" alt="" class="img-post">
+            <section class="interacao-box">
+              <section class="curtidas">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <span>13 Mil</span>
+                <i class="fa-solid fa-thumbs-down"></i>
+              </section>
+              <section class="comentarios">
+                <i class="fa-solid fa-comments"></i>
+                <span>1,2 Mil</span>
+              </section>
+              <section class="itens-salvos">
+                <i class="fa-regular fa-bookmark"></i>
+              </section>
+            </section>
+            <section class="previa-comentarios">
+              <img src="imagens/profile9.jpg" alt="" class="img-perfil-prev">
+              <section class="text-prev-comentarios">
+                <p>A ansiedade me causa muitos sintomas. Mas, um dos mais comuns é ficar muito <br> pensativa. Fico pensando, repensando e remoendo minha vida, presa nos...</p>
+                <section class="continuar-lendo">
+                  <span>Continuar lendo...</span>
+                </section>
+              </section>
+            </section>
+            <p class="ver-tudo-comentarios">Ver todos os 3.2k comentários</p>
+            <hr class="divisao-interesses">
+          </section>
+        </article>
+
+        <article class="postagens">
+          <section class="postagem-seçao">
+              <img src="imagens/insonia-top.svg" alt="" class="img-comunidade">
+              <section  class="titulo-sub-comunidade">
+                <h2>
+                  Insônia
+                </h2>
+                <hr>
+                <h3>
+                  Grupo Três da Manhã
+                </h3>
+              </section>
+              <section class="unir-se-box">
+                <input type="button" value="Unir-se" class="unir-se">
+              </section>
+          </section>
+          <section class="enquete-post-box">
+            <h2>Você tem dificuldades para dormir?<br> 
+              A insônia te afeta no dia a dia?</h2>
+            <input type="button" value="Sim">
+            <input type="button" value="Não">
+            <input type="button" value="Não tenho certeza">
+            <section class="interacao-box">
+              <section class="curtidas">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <span>13 Mil</span>
+                <i class="fa-solid fa-thumbs-down"></i>
+              </section>
+              <section class="comentarios">
+                <i class="fa-solid fa-comments"></i>
+                <span>1,2 Mil</span>
+              </section>
+              <section class="itens-salvos">
+                <i class="fa-regular fa-bookmark"></i>
+              </section>
+            </section>
+            <section class="previa-comentarios-enquete">
+              <img src="imagens/profile2.jpg" alt="" class="img-perfil-prev">
+              <section class="text-prev-comentarios">
+                <p>A ansiedade me causa muitos sintomas. Mas, um dos mais comuns é ficar muito <br> pensativa. Fico pensando, repensando e remoendo minha vida, presa nos...</p>
+                <section class="continuar-lendo">
+                  <span id="continuar-lendo-enquete">Continuar lendo...</span>
+                </section>
+              </section>
+            </section>
+            <p class="ver-tudo-comentarios">Ver todos os 3.2k comentários</p>
+            <hr class="divisao-interesses">
+          </section>
+        </article>
+
+        <article class="postagens">
+          <section class="postagem-seçao">
+              <img src="imagens/logo-grupo-borboleta.png" alt="" class="img-comunidade">
+              <section  class="titulo-sub-comunidade">
+                <h2>
+                  Ansiedade
+                </h2>
+                <hr>
+                <h3>
+                  Grupo Borboleta
+                </h3>
+              </section>
+              <section class="unir-se-box">
+                <input type="button" value="Unir-se" class="unir-se">
+              </section>
+          </section>
+          <section class="img-post-box">
+            <img src="imagens/ansiedade-2-post.svg" alt="" class="img-post">
+            <section class="interacao-box">
+              <section class="curtidas">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <span>13 Mil</span>
+                <i class="fa-solid fa-thumbs-down"></i>
+              </section>
+              <section class="comentarios">
+                <i class="fa-solid fa-comments"></i>
+                <span>1,2 Mil</span>
+              </section>
+              <section class="itens-salvos">
+                <i class="fa-regular fa-bookmark"></i>
+              </section>
+            </section>
+            <section class="previa-comentarios">
+              <img src="imagens/profile8.jpg" alt="" class="img-perfil-prev">
+              <section class="text-prev-comentarios">
+                <p>A ansiedade me causa muitos sintomas. Mas, um dos mais comuns é ficar muito <br> pensativa. Fico pensando, repensando e remoendo minha vida, presa nos...</p>
+                <section class="continuar-lendo">
+                  <span>Continuar lendo...</span>
+                </section>
+              </section>
+            </section>
+            <p class="ver-tudo-comentarios">Ver todos os 3.2k comentários</p>
+            <hr class="divisao-interesses">
+          </section>
+        </article>
+
+      <article class="comunidades-recomendadas">
+        <section class="comunidades-unidade">
+          <section class="slider-text-img">
+          <img src="imagens/logo-insonicos.png" alt="">
+          <section class="text-comunidades">
+            <h2>Insônicos</h2>
+            <p>Combate problemas cotidianos de sono</p>
+          </section>
+          </section>
+          <section class="span-acessar-box">
+            <section class="span-box-comunidades"><span>47.4K Membros</span></section>
+            <section class="acessar-box">
+              <i class="fa-solid fa-chevron-right"></i>
+            </section>
+          </section>
+        </section>
+
+        <section class="comunidades-unidade">
+          <section class="slider-text-img">
+          <img src="imagens/logo-alcoolicos-anonimos.png" alt="">
+          <section class="text-comunidades">
+            <h2>Alcólicos Anônimos</h2>
+            <p>Combate ao consumo de álcool</p>
+          </section>
+          </section>
+          <section class="span-acessar-box">
+            <section class="span-box-comunidades"><span>47.4K Membros</span></section>
+            <section class="acessar-box">
+              <i class="fa-solid fa-chevron-right"></i>
+            </section>
+          </section>
+        </section>
+
+        <section class="comunidades-unidade">
+          <section class="slider-text-img">
+          <img src="imagens/logo-grupo-borboleta.png" alt="">
+          <section class="text-comunidades">
+            <h2>Instituto Borboleta</h2>
+            <p>Combate problemas de Ansiedade</p>
+          </section>
+          </section>
+          <section class="span-acessar-box">
+            <section class="span-box-comunidades"><span>47.4K Membros</span></section>
+            <section class="acessar-box">
+              <i class="fa-solid fa-chevron-right"></i>
+            </section>
+          </section>
+        </section>
+      </article>
+      <hr class="divisao-interesses">
+
+        <article class="postagens">
+          <section class="postagem-seçao">
+              <img src="imagens/altivismo-grupo.svg" alt="" class="img-comunidade">
+              <section  class="titulo-sub-comunidade">
+                <h2>
+                  Autismo
+                </h2>
+                <hr>
+                <h3>
+                 Grupo Altivismo
+                </h3>
+              </section>
+              <section class="unir-se-box">
+                <input type="button" value="Unir-se" class="unir-se">
+              </section>
+          </section>
+          <section class="enquete-post-box">
+            <h2>Você tem dificuldades para dormir?<br> 
+              A insônia te afeta no dia a dia?</h2>
+            <input type="button" value="Sim">
+            <input type="button" value="Não">
+            <input type="button" value="Não tenho certeza">
+            <section class="interacao-box">
+              <section class="curtidas">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <span>13 Mil</span>
+                <i class="fa-solid fa-thumbs-down"></i>
+              </section>
+              <section class="comentarios">
+                <i class="fa-solid fa-comments"></i>
+                <span>1,2 Mil</span>
+              </section>
+              <section class="itens-salvos">
+                <i class="fa-regular fa-bookmark"></i>
+              </section>
+            </section>
+            <section class="previa-comentarios-enquete">
+              <img src="imagens/profile5.jpg" alt="" class="img-perfil-prev">
+              <section class="text-prev-comentarios">
+                <p>A ansiedade me causa muitos sintomas. Mas, um dos mais comuns é ficar muito <br> pensativa. Fico pensando, repensando e remoendo minha vida, presa nos...</p>
+                <section class="continuar-lendo">
+                  <span id="continuar-lendo-enquete">Continuar lendo...</span>
+                </section>
+              </section>
+            </section>
+            <p class="ver-tudo-comentarios">Ver todos os 3.2k comentários</p>
+            <hr class="divisao-interesses">
+          </section>
+        </article>
+
+      <article class="postagens">
+        <section class="postagem-seçao">
+            <img src="imagens/insonia-top.svg" alt="" class="img-comunidade">
+            <section  class="titulo-sub-comunidade">
+              <h2>
+                Insônia
+              </h2>
+              <hr>
+              <h3>
+                Grupo Três da Manhã
+              </h3>
+            </section>
+            <section class="unir-se-box">
+              <input type="button" value="Unir-se" class="unir-se">
+            </section>
+        </section>
+        <section class="img-post-box">
+          <img src="imagens/insonia-post.svg" alt="" class="img-post">
+          <section class="interacao-box">
+            <section class="curtidas">
+              <i class="fa-solid fa-thumbs-up"></i>
+              <span>13 Mil</span>
+              <i class="fa-solid fa-thumbs-down"></i>
+            </section>
+            <section class="comentarios">
+              <i class="fa-solid fa-comments"></i>
+              <span>1,2 Mil</span>
+            </section>
+            <section class="itens-salvos">
+              <i class="fa-regular fa-bookmark"></i>
+            </section>
+          </section>
+          <section class="previa-comentarios">
+            <img src="imagens/profile6.jpg" alt="" class="img-perfil-prev">
+            <section class="text-prev-comentarios">
+              <p>A ansiedade me causa muitos sintomas. Mas, um dos mais comuns é ficar muito <br> pensativa. Fico pensando, repensando e remoendo minha vida, presa nos...</p>
+              <section class="continuar-lendo">
+                <span>Continuar lendo...</span>
+              </section>
+            </section>
+          </section>
+          <p class="ver-tudo-comentarios">Ver todos os 3.2k comentários</p>
+        </section>
+      </article>
+      </article>
+  </main>
+  
+  <%- include("../partial/rodape") %>
+
+  <script src="public/javascript/comunidades.js"></script>
+</body>

@@ -1,0 +1,90 @@
+body {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+
+article {
+  width: 1550px;
+  height: 1014px;
+  border-radius: 25px;
+  border: 1px solid #ec8d26;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+table {
+  width: 1376px;
+  height: 330px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 17px 17px 17px 17px;
+  overflow: hidden;
+  border: #ec8d26 1px solid;
+
+
+}
+
+th {
+  text-align: left;
+  font-family: "Antialiased ", sans-serif;
+  color: #ffffff;
+  font-weight: normal;
+  padding-left: 45px;
+}
+
+tr.head {
+  background-color: #ec8d26;
+  height: 45px;
+}
+
+
+
+tbody td {
+  border: none;
+  
+}
+
+td {
+  text-align: center;
+  font-family: "Antialiased ", sans-serif;
+  color: rgba(66, 32, 64, 0.65);
+  font-size: 18px;
+}
+
+.inf {
+  text-align: center;
+  vertical-align: middle;
+  height: 100%;
+}
+
+h1 {
+  font-family: "Raleway SemiBold", "Raleway", sans-serif;
+  font-weight: normal;
+  color: rgba(66, 32, 64, 0.99);
+  font-size: 42px;
+}
+
+.fa-solid fa-arrow-down {
+  display: flex;
+  align-items: center;
+}
+
+#t1 i {
+  margin-left: 137px;
+}
+
+#t2 i{
+  margin-left: 95px;
+}
+
+i {
+  font-weight: normal;
+}

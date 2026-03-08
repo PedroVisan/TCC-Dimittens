@@ -1,0 +1,140 @@
+* body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    width: 327px;
+    height: 56px;
+    font-family: "Raleway SemiBold", "Raleway", sans-serif;
+    font-weight: 600;
+    color: rgba(66, 32, 64, 0.65);
+    text-align: center;
+    line-height: normal;
+    margin-top: 63px;
+}
+
+.submit {
+    width: 160px;
+    height: 55px;
+    border-radius: 17px;
+    font-size: 22px;
+    background-color: rgba(236, 141, 38, 0.99);
+    color: #ffffff;
+    border: none;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
+    font-family: "Raleway Bold", "Raleway", sans-serif;
+}
+
+.input {
+    width: 440px;
+    height: 65px;
+    border: 1px solid rgba(236, 141, 38, 0.99);
+    background-color: rgba(236, 141, 38, 0);
+    border-radius: 17px;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+.ph {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    gap: 65px;
+}
+
+.ph2 {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    gap: 65px;
+}
+
+#delet {
+    border: 2px solid rgba(236, 141, 38, 0.99);
+    background-color: rgba(236, 141, 38, 0);
+    color: rgba(236, 141, 38, 0.99);
+}
+
+.edit-info {
+    display: flex;
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.edit-img {
+    display: flex;
+    align-items: center;
+    gap: 245px;
+
+}
+
+.box-img {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#add {
+    width: 225px;
+}
+
+label {
+    font-family: "Antialiased ", sans-serif;
+    color: #333333;
+    margin-bottom: 5px;
+    width: none;
+    text-align: left;
+    margin-left: 10px;
+}
+
+article {
+    width: 1550px;
+    height: 865px;
+    border-radius: 25px;
+    border: 1px solid #ec8d26;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tele {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+.last {
+    display: flex;
+    flex-direction: column;
+}
+
+.myexpr {
+    display: flex;
+    flex-direction: column;
+}
+
+input::placeholder {
+    opacity: 1;
+}

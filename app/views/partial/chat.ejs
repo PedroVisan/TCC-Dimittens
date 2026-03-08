@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="usuario-id" content="<%= usuarioId %>">
+    <title>Chat Moderno</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/chat.css">
+</head>
+<body>
+    <nav id="sidebar">
+        <div id="user_infos">
+            <div class="user-avatar">
+                <%= usuarioNome.charAt(0).toUpperCase() %>
+            </div>
+            <div>
+                <div><%= usuarioNome %></div>
+                <small style="opacity: 0.7">Paciente</small>
+            </div>
+        </div>
+        <ul id="side_items">
+            <li class="side-item active">
+                <a href="/agenda"><i class="fa-solid fa-calendar-days"></i>Agenda</a>
+            </li>
+            <li class="side-item">
+                <a href="/ligacoes"><i class="fa-solid fa-phone"></i>Ligações</a>
+            </li>
+            <li class="side-item">
+                <a href="/midias"><i class="fa-solid fa-folder"></i>Mídias</a>
+            </li>
+        </ul>
+        <button id="logout_btn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Sair do Chat</span>
+        </button>
+    </nav>
+
+    <div class="box-contatos">
+        <div class="topo-titulo">
+            <h1>Conversas</h1>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+        <div id="contact-list">
+            <!-- Chat sessions will be loaded here -->
+        </div>
+    </div>
+
+    <div class="area-coluna" id="chat-area" style="display: none;">
+        <div class="chat-menu">
+            <h2 id="current-psychologist-name"></h2>
+        </div>
+
+        <div class="area-mensagens" id="main-chat">
+            <div class="empty-state">
+                <i class="fa-regular fa-comments"></i>
+                <h3>Selecione uma conversa para começar</h3>
+                <p>Escolha um psicólogo da lista para iniciar o chat</p>
+            </div>
+        </div>
+        <div class="input-mensagem-box" id="dropZone">
+            <div class="file-preview" id="filePreview" style="display: none">
+                <span id="fileName"></span>
+                <button class="remove-file" id="removeFile">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            
+            <input type="text" id="message-input" placeholder="Digite sua mensagem...">
+            
+            <div class="input-actions">
+                <div class="file-input-wrapper">
+                    <input type="file" id="fileInput" class="file-input" multiple>
+                    <button class="file-button" type="button">
+                        <i class="fa-solid fa-paperclip"></i>
+                    </button>
+                </div>
+                
+                <button id="submitBtn" class="send-btn">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript/chat.js"></script>
+</body>

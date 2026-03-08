@@ -1,0 +1,833 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #422040;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.passo-a-passo {
+    width: 100vw;
+    margin-top: -100px;
+}
+
+.passo-a-passo h1 {
+    text-align: center;
+    padding-top: 120px;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+    font-weight: normal;
+    color: #422040;
+    line-height: normal;
+    font-size: 36px;
+}
+
+main {
+    padding: 0;
+    margin: 0;
+}
+
+.info-titulo {
+    margin-top: -103px;
+    align-items: center;
+    text-align: center;
+}
+
+.info-titulo p {
+    font-size: 22px;
+    box-sizing: border-box;
+    font-family: "Arial Bold", "Arial Normal", "Arial", sans-serif;
+    font-weight: 700;
+    color: #f7f7f7;
+    line-height: normal;
+    margin-top: 20px;
+    margin-bottom: 94px;
+}
+
+.info-titulo hr {
+    width: 554px;
+    height: 2px;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    margin: 5px auto;
+}
+
+.info-titulo h1 {
+    font-family:  "Raleway Bold", "Raleway", "Raleway", sans-serif;
+    font-size: 34px;
+    color: #ec8d26;
+    font-weight: 700;
+    box-sizing: border-box;
+    line-height: normal;
+    margin: 0;
+}
+
+.d-original {
+    z-index: 0;
+    transform: translateY(-20px);
+    margin-left: 40px;
+}
+
+.d-fundo {
+    z-index: 0;
+    display: flex;
+    width: 50vw;
+    align-items: flex-end;
+}
+
+.d810 {
+    z-index: 0;
+    display: none;
+    width: 50vw;
+    align-items: flex-end;
+}
+
+.d660 {
+    z-index: 0;
+    display: none;
+    width: 50vw;
+    align-items: flex-end;
+}
+
+.d510 {
+    z-index: 0;
+    display: none;
+    width: 50vw;
+    align-items: flex-end;
+}
+
+.d360 {
+    z-index: 0;
+    display: none;
+    width: 50vw;
+    align-items: flex-end;
+}
+
+.d210 {
+    z-index: 0;
+    display: none;
+    width: 50vw;
+    align-items: flex-end;
+}
+
+.text {
+    width: 50vw;
+    margin-left: 300px;
+    margin-top: 280px;
+    padding: 0;
+}
+
+.sec-terapia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 3px solid #422040;
+}
+
+.tipo-terapia h1 {
+    text-align: center;
+}
+
+.tipo-terapia {
+    z-index: 1;
+    margin: 0 auto;
+    display: flex;
+    width: 75.052vw;
+    height: 50%;
+    padding: 42px 0 54px 0;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.99);
+    transform: translateY(-232px);
+}
+
+
+.tipo-terapia > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    padding: 0 15px 0 15px;
+}
+
+.borda-right {
+    border-right: 3px solid #422040;
+}
+
+.tipo-terapia h1 {
+    font-family: "Raleway Medium", "Raleway", "Raleway", sans-serif;
+    font-size: 28px;
+    color: #ec8d26;
+    font-weight: 500;
+    box-sizing: border-box;
+    line-height: normal;
+    padding: 0;
+    margin: 0 0 32px 0;
+}
+
+.tipo-terapia img {
+    width: 65px;
+    height: 65px;
+    display: block;
+    opacity: 0.4;
+    padding: 0;
+    margin: 0 0 12px 0;
+} 
+
+.tipo-terapia p {
+  padding: 0;
+  margin: 0;
+  font-size: 22px;
+  box-sizing: border-box;
+  font-family: "Raleway Medium", "Raleway", "Raleway", sans-serif;
+  font-weight: 500;
+  color: #422040;
+  text-align: center;
+  line-height: normal;
+}
+
+
+.titulo {
+    text-align: left;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 54px;
+    font-family: "Arial Bold", "Arial Normal", "Arial", sans-serif;
+}
+
+ h2 .msg-boasvindas {
+    font-size: 20px;
+    font-family: "Arial Bold", "Arial Normal", "Arial", sans-serif;
+    color: white;
+    position: relative;
+    right: 100px;
+    top: 20px;
+    margin-bottom: 20px;
+}
+
+.msg-boasvindas {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 36.5ch;
+    animation: mark .5s step-end infinite, write 7s steps(22, end) 1;
+}
+
+@keyframes mark {
+    50%{
+        border-right-color: transparent;
+    }
+}
+
+@keyframes write {
+    0%{
+        width: 0;
+    }
+}
+
+.p-slogan {
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    font-family: "Arial Bold", "Arial Normal", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: none;
+    margin-top: 20px;
+}
+
+.primeiro-quadrante {
+    display: inline-flex;
+    width: 100vw;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-device {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: 25px;
+    width: 100%;
+}
+
+.mulher {
+    display: none;
+}
+
+
+.mulher-320px {
+    display: none;
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+    .d-original {
+        display: none;
+    }
+
+    .d660 {
+        display: none;
+    }
+
+    .mulher-320px {
+        margin-top: 20px;
+        display: block;
+        z-index: 1;
+    }
+
+    .text {
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+    
+    .titulo {
+        font-size: 1.2rem;
+    }
+    
+    .p-slogan {
+        font-size: 0.7rem;
+    }
+
+    .tipo-terapia {
+        transform: translateY(-10px);
+        padding: 10px;
+        width: 85vw;;
+    }
+
+    .tipo-terapia p {
+        font-size: 10px;
+    }
+
+    .tipo-terapia h1 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .tipo-terapia img {
+        width: 35px;
+        height:35px
+    }
+
+    .info-titulo h1 {
+        font-size: 18px;
+        text-align: center;
+        padding-top: 150px;
+    }
+
+    .info-titulo hr {
+        width: 60vw;
+        border: 1px solid #ffffff;
+    }
+
+    .info-titulo p {
+        font-size: 13px;
+        margin: 20px 60px 70px 60px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 480px) {
+
+    .d-original {
+        display: none;
+    }
+
+    .d660 {
+        display: none;
+    }
+
+    .mulher-320px {
+        display: block;
+        z-index: 1;
+        transform: translateX(-10px);
+    }
+
+    .text {
+        margin-top: 5px;
+        margin-left: 50px;
+    }
+    
+    .titulo {
+        font-size: 1.4rem;
+        margin: 0;
+    }
+    
+    .p-slogan {
+        font-size: 1rem;
+        width: 200px;
+    }
+
+    .tipo-terapia {
+        transform: translateY(-10px);
+        padding: 10px;
+        width: 90vw;
+    }
+
+    .tipo-terapia p {
+        font-size: 12px;
+    }
+
+    .tipo-terapia h1 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .tipo-terapia img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .info-titulo h1 {
+        font-size: 22px;
+        padding-top: 130px;
+    }
+
+    .info-titulo hr {
+        width: 70vw;
+        border: 1px solid #ffffff;
+    }
+
+    .info-titulo p {
+        font-size: 16px;
+        margin: 20px 80px 70px 80px;
+    }
+
+    .passo-a-passo {
+        margin-top: -350px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    .d-original {
+        display: none;
+    }
+
+    .d660 {
+        display: block;
+        z-index: 1;
+        transform: translateY(-70px);   
+    }
+
+    .text {
+        margin-top: 50px;
+        margin-left: 90px;
+    }
+    
+    .titulo {
+        font-size: 1.5rem;
+    }
+    
+    .p-slogan {
+        font-size: 1rem;
+    }
+
+    .tipo-terapia {
+        transform: translateY(-130px);
+        padding: 20px;
+    }
+
+    .tipo-terapia p {
+        font-size: 20px;
+    }
+
+    .tipo-terapia h1 {
+        font-size: 24px;
+    }
+
+    .tipo-terapia img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .info-titulo h1 {
+        font-size: 28px;
+        padding-top: 40px;
+    }
+
+    .info-titulo hr {
+        width: 60vw;
+        border: 2px solid #ffffff;
+    }
+
+    .info-titulo p {
+        font-size: 20px;
+        margin: 20px 80px 94px 80px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 550px) {
+    .d-original {
+        display: none;
+    }
+
+    .d660 {
+        display: none;
+    }
+
+    .mulher {
+        display: block;
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+
+    .text {
+        margin-top: 5px;
+        margin-left: 50px;
+    }
+    
+    .titulo {
+        font-size: 1.6rem;
+    }
+    
+    .p-slogan {
+        font-size: 1rem;
+        width: 200px;
+    }
+
+    .tipo-terapia {
+        transform: translateY(-40px);
+        padding: 10px;
+        width: 85vw;;
+    }
+
+    .tipo-terapia p {
+        font-size: 16px;
+    }
+
+    .tipo-terapia h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .tipo-terapia img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .info-titulo h1 {
+        font-size: 24px;
+        padding-top: 130px;
+    }
+
+    .info-titulo hr {
+        width: 70vw;
+        border: 2px solid #ffffff;
+    }
+
+    .info-titulo p {
+        font-size: 16px;
+        margin: 20px 80px 70px 80px;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 700px) {
+    .d-original {
+        display: none;
+    }
+
+    .d660 {
+        display: none;
+    }
+
+    .mulher {
+        display: block;
+        margin-bottom: 40px;
+        margin-top: 15px;
+    }
+
+    .text {
+        margin-top: 50px;
+        margin-left: 70px;
+    }
+    
+    .titulo {
+        font-size: 1.5rem;
+    }
+    
+    .p-slogan {
+        font-size: 1rem;
+        width: 200px;
+    }
+
+    .tipo-terapia {
+        transform: translateY(-40px);
+        padding: 15px;
+    }
+
+    .tipo-terapia p {
+        font-size: 16px;
+    }
+
+    .tipo-terapia h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .tipo-terapia img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .info-titulo h1 {
+        font-size: 28px;
+        padding-top: 130px;
+    }
+
+    .info-titulo hr {
+        width: 70vw;
+        border: 2px solid #ffffff;
+    }
+
+    .info-titulo p {
+        font-size: 18px;
+        margin: 20px 80px 70px 80px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 768px) {
+    .d-original {
+        display: none;
+    }
+
+    .d660 {
+        display: none;
+    }
+
+    .d360 {
+        display: block;
+        margin-bottom: 40px;
+        margin-top: 15px;
+    }
+
+    .text {
+        margin-top: 70px;
+        margin-left: 60px;
+    }
+    
+    .titulo {
+        font-size: 1.5rem;
+    }
+    
+    .p-slogan {
+        font-size: 1.2rem;
+    }
+
+    .tipo-terapia {
+        transform: translateY(-95px);
+        padding: 15px;
+    }
+
+    .tipo-terapia p {
+        font-size: 18px;
+    }
+
+    .tipo-terapia h1 {
+        font-size: 22px;
+    }
+
+    .tipo-terapia img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .mulher {
+        display: none;
+    }
+
+    .info-titulo h1 {
+        font-size: 28px;
+        padding-top: 70px;
+    }
+
+    .info-titulo hr {
+        width: 70vw;
+        border: 2px solid #ffffff;
+    }
+
+    .info-titulo p {
+        font-size: 18px;
+        margin: 20px 80px 94px 80px;
+    }
+}
+
+
+@media (min-width: 900px) and (max-width: 1000px) {
+    .d-original {
+        display: none;
+    }
+
+    .d660 {
+        display: block;
+        z-index: 1;
+        transform: translateY(-70px); 
+    }
+
+    .d510 {
+        display: none;   
+    }
+
+    .text {
+        margin-top: 100px;
+        margin-left: 120px;
+    }
+    
+    .titulo {
+        font-size: 1.74rem;
+    }
+    
+    .p-slogan {
+        font-size: 1.1rem;
+    }
+
+    .tipo-terapia {
+        transform: translateY(-137px);
+    }
+
+    .tipo-terapia h1 {
+        font-size: 18px;
+    }
+
+    .tipo-terapia p {
+        font-size: 16px;
+    }
+
+    .info-titulo h1 {
+        font-size: 28px;
+        padding-top: 40px;
+    }
+
+    .info-titulo hr {
+        width: 47vw;
+        border: 2px solid #ffffff;
+    }
+
+    .info-titulo p {
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 1000px) and (max-width: 1100px) {
+    .d-original {
+        display: none;
+    }
+
+    .d510 {
+        display: block;
+        z-index: 1;
+        transform: translateY(-110px);    
+    }
+
+    .text {
+        margin-top: 60px;
+        margin-left: 100px;
+    }
+    
+    .titulo {
+        font-size: 1.9rem;
+    }
+    
+    .p-slogan {
+        font-size: 1.4rem;
+    }
+
+    .tipo-terapia {
+        transform: translateY(-185px);
+    }
+}
+
+
+@media (min-width: 1100px) and (max-width: 1350px) {
+    .d-original {
+        display: none;
+    }
+
+    .d510 {
+        display: block;
+        z-index: 1;
+        transform: translateY(-110px);    
+    }
+
+    .text {
+        margin-top: 70px;
+        margin-left: 110px;
+        width: 55vw;
+    }
+    
+    .titulo {
+        font-size: 2.2rem;
+    }
+    
+    .p-slogan {
+        font-size: 1.5rem;
+    }
+
+    .tipo-terapia {
+        transform: translateY(-195px);
+    }
+}
+
+@media (min-width: 1350px) and (max-width: 1550px) {
+    .d-original {
+        display: none;
+    }
+
+    .d660 {
+        display: block;
+        z-index: 1;
+        transform: translateY(-110px);    
+    }
+
+    .text {
+        margin-top: 130px;
+        margin-left: 130px;
+    }
+    
+    .titulo {
+        font-size: 40px;
+    }
+    
+    .p-slogan {
+        font-size: 28px;
+    }
+
+        .tipo-terapia {
+            transform: translateY(-220px);
+        }
+
+        .tipo-terapia h1 {
+            font-size: 28px;
+        }
+
+        .tipo-terapia p {
+            font-size: 20px;
+        }
+}
+
+@media (min-width: 1550px) and (max-width: 1774px) {
+    .d-original {
+        display: none;
+    }
+
+    .d810 {
+        display: block;
+        z-index: 1;
+        transform: translateY(-110px);    
+    }
+
+    .text {
+        margin-left: 200px;
+        margin-top: 130px;
+    }
+    
+    .titulo {
+        font-size: 48px;
+    }
+    
+    .p-slogan {
+        font-size: 30px;
+    }
+}

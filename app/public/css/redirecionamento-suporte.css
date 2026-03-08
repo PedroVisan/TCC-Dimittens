@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Raleway Bold", "Raleway", sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.main-redire {
+    padding: 0 230px 0 230px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    font-family: "Raleway Bold", "Raleway", sans-serif;
+    font-weight: 700;
+    color: #ec8d26;
+    text-align: center;
+    line-height: normal;
+    font-size: 35px;
+}
+
+.titulo-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-box hr {
+    width: 628px;
+    border: 1px solid #ec8d26;
+}
+
+.sumario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #ec8d26;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.subtitulo  {
+    box-sizing: border-box;
+    font-weight: 700;
+    color: #ec8d26;
+    text-align: center;
+    line-height: normal;
+    font-size: 2.1rem;
+    margin-top: 150px;
+}
+
+#atendimento-denuncias h2  {
+    box-sizing: border-box;
+    font-weight: 700;
+    color: #ec8d26;
+    text-align: center;
+    line-height: normal;
+    font-size: 2.1rem;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.info-duvidas li {
+    font-size: 1.5rem;  
+    color: #333333;
+}
+
+#duvidas-atendi {
+    margin-bottom: 200px;
+}
+
+#atendimento-denuncias {
+    padding: 0px 230px 0 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#atendimento-denuncias p {
+    font-size: 1.5rem;  
+    color: #333333;
+    text-align: center;
+    line-height: normal;
+    margin-bottom: 80px;
+}
+
+h4 {
+    font-size: 1.3rem;
+    box-sizing: border-box;
+    font-weight: 500;
+    color: #ec8d26;
+    text-align: center;
+    line-height: normal;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #422040;
+    text-align: center;
+    line-height: normal;
+    font-weight: 700;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+p {
+    font-size: 1.5rem;  
+    color: #333333;
+    text-align: center;
+    line-height: normal;
+    margin-bottom: 80px;
+}
+

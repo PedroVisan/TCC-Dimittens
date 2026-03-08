@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Psicólogos</title>
+    <link rel="stylesheet" href="css/cadastropsicologos.css">
+</head>
+<body>
+    <main class="container">
+        <section class="logotipo">
+            <img src="imagens/logo-roxo.png" alt="" id="logo">
+        </section>
+        <h1 class="title">Bem Vindo(a) a Dimittens</h1>
+        
+        <form method="post" action="/cadastropsicologos" id="cadastroForm">
+            <section class="input-field">
+                <label for="username" class="lbln">Nome Completo</label>
+                <input type="text" name="username" class="input" id="username" placeholder="Digite seu nome" value="<%= valores.username %>" required>
+                <span class="warning"></span>
+                
+                <label for="userdate" class="lbl">Data de Nascimento</label>
+                <input type="date" name="userdate" class="input" id="userdate" value="<%= valores.userdate %>" required>
+                <span class="warning"></span>
+
+                <label for="userdocuments" class="lbl">CPF</label>
+                <input type="text" name="userdocuments" class="input" id="userdocuments" placeholder="Digite seu CPF" value="<%= valores.userdocuments %>" required>
+                <span class="warning"></span>
+
+                <label for="usercrp" class="lbl">CRP</label>
+                <input type="text" name="usercrp" class="input" id="usercrp" placeholder="Digite seu CRP" value="<%= valores.usercrp %>" required>
+                <span class="warning"></span>
+
+                <label for="useremail" class="lbl">Email</label>
+                <input type="text" name="useremail" class="input" id="useremail" placeholder="Digite seu email" value="<%= valores.useremail %>" required>
+                <span class="warning"></span> 
+
+                <label for="userpassword" class="lbl">Criar Senha</label>
+                <input type="password" name="userpassword" class="input" id="userpassword" placeholder="Digite sua senha" value="<%= valores.userpassword %>" required>
+                <span class="warning"></span>
+
+                <label for="usercpassword" class="lbl">Confirmar Senha</label>
+                <input type="password" name="usercpassword" class="input" id="usercpassword" placeholder="Digite sua senha" required>
+                <span class="warning"></span>
+            </section>
+        
+            <section class="aviso-formatacao">
+                A senha deve ter maiúscula, número, especial (!@#$%&*) e Email válido (ex: usuario@dominio.com).</section>
+
+            <section class="continue">
+                <input type="submit" value="Continuar" id="continuar" required>
+            </section>
+        </form>
+        
+        <section class="signup-conditions">
+            <p id="termos-de-serviço" class="sign">Ao continuar, você concorda com os <br>
+                <a href="#"><strong>Termos de Serviço</strong></a> da Dimittens e confirma que <br>leu a nossa <a href="#"><strong>Política de Privacidade</strong></a> 
+            </p>
+            <hr>
+            <p id="aviso-entrar" class="sign"><strong>Já tem uma conta? <a href="loginpsicologos">Entrar</strong></a></p>
+        </section>
+    </main>
+    <script src="javascript/validacao.js"></script>
+</body>
+</html>

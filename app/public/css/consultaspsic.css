@@ -1,0 +1,102 @@
+body {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 1800px;
+    height: 850px;
+  }
+  
+  
+  article {
+    width: 1550px;
+    height: 865px;
+    border-radius: 25px;
+    border: 1px solid #422040;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  
+  
+  
+  table {
+    width: 1280px;
+    height: 557px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 17px 17px 17px 17px;
+    overflow: hidden;
+    border: #422040 1px solid;
+  
+  }
+  
+  th {
+    text-align: center;
+    font-family: "Raleway Medium", "Raleway", sans-serif;
+    color: white;
+    font-weight: normal;
+    width: 1280px;
+    height: 65px;
+    border: 1px solid white;
+    border-top: none;
+    border-bottom: none;
+    font-weight: 600;
+  }
+
+  #th1 {
+    border-left: none;
+  }
+
+  #th2 {
+    border-right: none;
+  }
+  
+  tr.head {
+    background-color: #422040;
+    height: 45px;
+    border: 1px solid white;
+  }
+  
+  
+  
+  tbody td {
+    border: none;
+    
+  }
+  
+  td {
+    text-align: center;
+    font-family: "Antialiased ", sans-serif;
+    color: rgba(66, 32, 64, 0.65);
+    font-size: 18px;
+  }
+  
+  .inf {
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+  }
+  
+  h1 {
+    font-family: "Raleway SemiBold", "Raleway", sans-serif;
+    font-weight: normal;
+    color: rgba(66, 32, 64, 0.99);
+    font-size: 42px;
+  }
+  
+  .fa-solid fa-arrow-down {
+    display: flex;
+    align-items: center;
+  }
+  
+  #t1 i {
+    margin-left: 137px;
+  }
+  
+  #t2 i{
+    margin-left: 95px;
+  }

@@ -1,0 +1,109 @@
+<title>Rodapé</title>
+<link rel="stylesheet" href="css/rodape.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+    <footer>
+        <section class="logo-rodape">
+            <img src="imagens/logo-laranja.png" alt="">
+        </section>
+        <section class="rodape-infos">
+                <h1>Inicio</h1>
+            <a href="psicologos.ejs">
+                <h2>Psicólogos</h2>
+            </a>
+            <a href="chat.ejs">
+                <h2>Chat</h2>
+            </a>
+            <a href="calendario.ejs">
+                <h2>Calendário</h2>
+            </a>
+            <a href="logout">
+                <h2>Comunidade</h2>
+            </a>
+        </section>
+
+        <section class="rodape-infos" id="sobre-nos">       
+                <h1>Sobre Nós</h1>
+            <a href="sobrenos.ejs">
+                <h2>Informações da plataforma</h2>
+            </a>
+            <a href="https://fiebedu.sharepoint.com/:u:/s/DIMITTENS3.0/EbwGvnIojitHnyz3GGRp6GQBU1OX5AVcMJ1WLO1lKbaHAg?e=5cJoPP">
+                <h2>Equipe</h2>
+            </a>
+            <a
+                href="https://fiebedu.sharepoint.com/:u:/s/DIMITTENS3.0/ERiMpQ4LjONFl2JwJjd3XVsB2gMvLMx6dMQHItFB19Gd6Q?e=hyVqPb">
+                <h2>SharePoint</h2>
+            </a>
+        </section>
+
+
+        <section class="rodape-infos" id="suporte">
+            <h1>Suporte</h1>
+            <a href="faq.ejs">
+                <h2>FAQ</h2>
+                <h2>Telefones</h2>
+                <h2>Contato</h2>
+                <h2>Redes</h2>
+            </a>
+        </section>
+
+
+        <section class="rodape-contatos">
+            <section class="item-icon">
+                <i class="fa-regular fa-envelope"></i>
+                <h2 class="contatos">contato@dimittens.com.br</h2>
+            </section>
+            <section class="item-icon">
+                <i class="fa-solid fa-phone"></i>
+                <h2 class="contatos">(11) 96077-5570</h2>
+            </section>
+            <section class="icons-contatos">
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-solid fa-x"></i>
+            </section>
+            <h2 class="direitos-rodape">©2024Dimittens. <br>
+                Todos os direitos reservados</h2>
+        </section>
+        <div>
+            <button id="denunciaButton">
+                <i class="fas fa-exclamation-triangle"></i> Denunciar
+            </button>
+        </div>   
+        
+        <!-- Janela Modal -->
+        <!-- <div id="denunciaModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Realizar Denúncia</h2>
+                <form id="denunciaForm">
+                    <label for="nomeDenunciante">Seu Nome:</label>
+                    <input type="text" id="nomeDenunciante" name="nomeDenunciante" value=<%= usuarioNome %>! readonly>
+        
+                    <label for="nomeDenunciado">Nome do Denunciado:</label>
+                    <input type="text" id="nomeDenunciado" name="nomeDenunciado" required>
+        
+                    <label for="motivoDenuncia">Motivo:</label>
+                    <select id="motivoDenuncia" name="motivoDenuncia" required>
+                        <option value="">Selecione um motivo</option>
+                        <option value="Abuso">Abuso</option>
+                        <option value="Comportamento Inadequado">Comportamento Inadequado</option>
+                        <option value="Fraude">Fraude</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+        
+                    <label for="textoDenuncia">Descrição:</label>
+                    <textarea id="textoDenuncia" name="textoDenuncia" rows="4" required></textarea>
+        
+                    <button type="submit">Enviar Denúncia</button>
+                    <button type="button" id="limparButton">Limpar</button>
+                </form>
+            </div>
+        </div> !-->
+    </footer>
+</body>
+

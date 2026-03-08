@@ -1,0 +1,194 @@
+
+    <title>Carrossel de Cards</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="javascript/carrosel-transtornos.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-color: #422040;
+        }
+
+        .carousel {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: max-content;
+            padding: 0px 0 100px 0;
+            max-width: 1920px;
+            margin-left: 50px;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 400px;
+            padding: 75px 50px 75px 50px;
+            height: 350px;
+            border-radius: 10px;
+            border: 2px solid  #dfa5d9;
+            background-color: rgba(236, 141, 38, 0);
+            margin-right: 40px; /* Ajuste das margens */
+            box-sizing: border-box;
+        }
+
+        .card h1, .card p {
+            user-select: none;
+            width: 300px;
+        }
+
+        .card h1 {
+            font-family: "Raleway Bold", "Raleway", sans-serif;
+            font-weight: 700;
+            color: #dfa5d9;
+            text-align: left;
+            line-height: normal;
+            margin: 0;
+            font-size: 30px;
+        }
+
+        .p-card {
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .card span {
+            display: flex;
+        }
+
+        .span-box {
+            display: flex;
+            align-self: flex-start;
+            margin-top: 10px;
+            height: max-content;
+        }
+
+        .span-box p {
+            font-size: 22px;
+            width: max-content;
+        }
+
+        .card i {
+            margin-top: 6px;
+            margin-left: 10px;
+            font-size: 14px;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #ffd700;
+        }
+
+
+        @media (min-width: 320px) and (max-width: 480px) {
+            .carousel {
+                margin-left: 20px;
+            }
+
+
+            .card {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 225px;
+                height: 175px;
+            }
+
+            .card h1 {
+                font-size: 14px;
+                padding: 0 85px 0 85px;
+            }
+
+            .p-card {
+                font-size: 12px;
+                word-wrap: break-word;
+                width: 100px;
+                padding: 0 85px 0 85px;
+            }
+
+            .span-box p {
+                font-size: 12px;
+            }
+
+            .card i {
+                font-size: 10px;
+                margin-top: 3px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="card">
+                    <h1>Stress</h1>
+                    <p class="p-card">Ansiedade, (TEPT), transtorno obsessivo compulsivo (TOC), fobias e síndrome do pânico.</p>
+                    <section class="espaco"></section>
+                    <section class="span-box">
+                        <a href="#"><span><p>Ver mais</p><i class="fa-solid fa-arrow-right"></i></span></a>
+                    </section>
+                </div>
+                <div class="card">
+                    <h1>Humor</h1>
+                    <p class="p-card">Depressão, tristeza, apatia, euforia, isolamento, transtorno bipolar e outros transtornos do humor.</p>
+                    <section class="espaco"></section>
+                    <section class="span-box">
+                        <a href="#"><span><p>Ver mais</p><i class="fa-solid fa-arrow-right"></i></span></a>
+                    </section>
+                </div>
+                <div class="card">
+                    <h1>Personalidade</h1>
+                    <p class="p-card">Borderline, paranoide, (TPD), esquizóide, antisocial, histriônica, anancástica e narcisista.</p>
+                    <section class="espaco"></section>
+                    <section class="span-box">
+                        <a href="#"><span><p>Ver mais</p><i class="fa-solid fa-arrow-right"></i></span></a>
+                    </section>
+                </div>
+                <div class="card">
+                    <h1>Evolução Pessoal</h1>
+                    <p class="p-card">Insegurança, indecisão, auto cobrança excessiva, dificuldade de se expressar e instabilidade emocional.</p>
+                    <section class="espaco"></section>
+                    <section class="span-box">
+                        <a href="#"><span><p>Ver mais</p><i class="fa-solid fa-arrow-right"></i></span></a>
+                    </section>
+                </div>
+                <div class="card">
+                    <h1>Compulsões</h1>
+                    <p class="p-card">Tricotilomania, FOMO, hipersexualidade, compulsões por comida, trabalho, compras, jogos e outras.</p>
+                    <section class="espaco"></section>
+                    <section class="span-box">
+                        <a href="#"><span><p>Ver mais</p><i class="fa-solid fa-arrow-right"></i></span></a>
+                    </section>
+                </div>
+                <div class="card">
+                    <h1>Relacionamento</h1>
+                    <p class="p-card">Abusivo, dependente, carente, ciume exessivo e outros. Entenda melhor os seus relacionamentos e saiba sempre como melhorar sua vida matrimonial e sexual.</p>
+                    <section class="span-box">
+                        <a href="#"><span><p>Ver mais</p><i class="fa-solid fa-arrow-right"></i></span></a>
+                    </section>
+                </div>
+                <div class="card">
+                    <h1>Sono</h1>
+                    <p class="p-card">Insônia, Hipersonia não-orgânica, privação do sono, paralisia do sono, sonambulismo, e outros problemas de sono.</p>
+                    <section class="span-box">
+                        <a href="#"><span><p>Ver mais</p><i class="fa-solid fa-arrow-right"></i></span></a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>

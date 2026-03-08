@@ -1,0 +1,674 @@
+
+<title>Header</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+<style>
+body {
+margin: 0;
+overflow-x: hidden;
+height: 2000px;
+
+}
+
+
+
+
+.nav-bar {
+display: flex;
+list-style: none;
+padding: 0;
+margin: 0;
+justify-content: flex-end;
+flex: 1;
+margin-right: 0.1vw;
+}
+
+.nav-bar li {
+margin: 0 1.5vw;
+font-family: "Raleway Medium", "Raleway", "Raleway", sans-serif;
+font-size: 20px;
+}
+
+.nav-bar li a {
+text-decoration: none;
+font-weight: 500;
+color: #422040;
+}
+
+.menu a.logo {
+margin-left: 14px;
+display: flex;
+margin-top: 5px;
+}
+
+.right-icons {
+display: flex;
+gap: 20px;
+}
+
+.logo-img {
+width: 95px;
+height: 95px;
+}
+
+.menu {
+background: linear-gradient(to right, #ec8d26 17.20%, white 17.20%);
+width: 75.78vw;
+height: 75px;
+border-radius: 45px;
+box-shadow: 5px 5px 5px 0px rgba(66, 32, 64, 0.35);
+align-items: center;
+display: flex;
+justify-content: center;
+margin: 36px auto;
+box-sizing: border-box;
+z-index: 2;
+position: relative;
+}
+
+.menu-device {
+display: none;
+justify-content: space-between;
+align-items: center;
+border-bottom: 1px solid white;
+padding: 25px;
+width: 100%;
+}
+
+.menu-device i {
+color: white;
+font-size: 38px;
+}
+
+.loginssub {
+    display: none;
+    flex-direction: column;
+    z-index: 2;
+    position: absolute;
+    width: 350px;
+    align-items: center;
+    height: 190px;
+    background-color: white;
+    margin-left: -130px;
+    padding-top: 17px;
+}
+
+.signsub {
+    display: none;
+    flex-direction: column;
+    z-index: 2;
+    position: absolute;
+    width: 350px;
+    align-items: center;
+    height: 190px;
+    background-color: white;
+    padding-top: 17px;
+    margin-left: -118px;
+}
+
+#loginBtn {
+  width: 95px;
+  height: 40px;
+  border-radius: 45px;
+  border: 2px solid #422040;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+  font-family: "Raleway SemiBold", "Raleway", sans-serif;
+  font-weight: 600;
+  color: #422040;
+  text-align: center;
+  line-height: normal;
+}
+
+#loginBtn:hover {
+    background-color: #422040;
+    color: white;
+}
+
+#loginBtn:hover + .loginssub{
+    display: flex;
+}
+
+#cadastroBtn:hover + .signsub{
+    display: flex;
+}
+
+.signsub:hover {
+    display: flex;
+}
+
+.loginssub:hover {
+    display: flex;
+}
+
+#cadastroBtn {
+  width: 120px;
+  height: 40px;
+  border-radius: 45px;
+  border: 2px solid #422040;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+  font-family: "Raleway SemiBold", "Raleway", sans-serif;
+  font-weight: 600;
+  color: #422040;
+  text-align: left;
+  line-height: normal;
+  text-align: center;
+}
+
+#cadastroBtn:hover {
+    background-color: #422040;
+    color: white;
+}
+
+#loginBtnpsic, #loginBtndep, #loginBtnpac {
+  width: 350px;
+  height: 60px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: white;
+  text-align: center;
+  line-height: normal;
+  font-family: "Raleway Medium", "Raleway", "Raleway", sans-serif;
+}
+
+#signBtnpsic, #signBtndep, #signBtnpac {
+  width: 350px;
+  height: 60px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: white;
+  text-align: center;
+  line-height: normal;
+  font-family: "Raleway Medium", "Raleway", "Raleway", sans-serif;
+}
+
+#signBtnpsic:hover {
+background-color: #422040;
+color: white;
+font-weight: 600;
+cursor: pointer;
+}
+
+#signBtndep:hover {
+background-color: #422040;
+color: white;
+font-weight: 600;
+cursor: pointer;
+}
+
+#signBtnpac:hover {
+background-color: #422040;
+color: white;
+font-weight: 600;
+cursor: pointer;
+}
+
+#loginBtnpsic:hover {
+    background-color: #422040;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#loginBtndep:hover {
+    background-color: #422040;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#loginBtnpac:hover {
+    background-color: #422040;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+.box-buttons {
+    display: flex;
+    margin-right: 50px;
+    gap: 20px;
+}
+
+
+@media (min-width: 320px) and (max-width: 400px) {
+.menu-device {
+    display: flex;
+}
+#menu-smart {
+    order: 1;
+    font-size: 30px;
+}
+.right-icons {
+    order: 2;
+    display: flex;
+}
+
+#user, #config {
+    display: block;
+    font-size: 25px;
+}
+
+.menu {
+    display: none;
+}
+
+.nav-bar {
+    display: none;
+}
+
+.logo-img {
+    display: none;
+}
+
+header {
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+
+.logo {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+}
+
+@media (min-width: 400px) and (max-width: 480px) {
+    .menu-device {
+    display: flex;
+}
+
+.logo-img {
+    display: none;
+}
+
+.nav-bar {
+    display: none;
+}
+
+header {
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+
+.logo {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu-smart {
+    order: 1;
+    font-size: 35px;
+}
+
+.right-icons {
+    order: 2;
+    display: flex;
+}
+
+#user, #config {
+    display: block;
+    font-size: 25px;
+}
+
+.menu {
+    display: none;
+}
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    .nav-bar li {
+    font-size: 10px;
+    margin-right: 0.3vw;
+}
+
+.box-buttons {
+    margin-right: 20px;
+    margin-left: 10px;
+    gap: 5px;
+}
+
+#cadastroBtn {
+    width: 55px;
+    height: 25px;
+    font-size: 8px;
+}
+
+#loginBtn {
+    width: 50px;
+    height: 25px;
+    font-size: 8px;
+}
+
+.logo-img {
+    width: 65px;
+    height: 65px;
+}
+
+.menu a.logo {
+    margin-left: 15px;
+}
+}
+
+@media (min-width: 480px) and (max-width: 550px) {
+    .menu-device {
+    display: flex;
+}
+
+#menu-smart {
+    order: 1;
+    font-size: 45px;
+}
+
+.right-icons {
+    order: 2;
+    display: flex;
+}
+
+#user, #config {
+    display: block;
+}
+
+.menu {
+    display: none;
+}
+
+.logo-img {
+    display: none;
+}
+
+.nav-bar {
+    display: none;
+}
+
+header {
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+
+.menu-device {
+    display: flex;
+}
+
+#menu-smart {
+    order: 1;
+    font-size: 45px;
+}
+
+.right-icons {
+    order: 2;
+    display: flex;
+}
+
+#user, #config {
+    display: block;
+}
+
+.menu {
+    display: none;
+}
+
+.logo-img {
+    display: none;
+}
+
+.nav-bar {
+    display: none;
+}
+}
+
+header {
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+
+.logo {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media (min-width: 550px) and (max-width: 768px) {
+    .menu-device {
+    display: flex;
+}
+
+#menu-smart {
+    order: 1;
+    font-size: 45px;
+}
+
+.right-icons {
+    order: 2;
+    display: flex;
+}
+
+#user, #config {
+    display: block;
+}
+
+.menu {
+    display: none;
+}
+
+.logo-img {
+    display: none;
+}
+
+.nav-bar {
+    display: none;
+}
+
+header {
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+
+.logo {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+}
+
+@media (min-width: 900px) and (max-width: 1000px) {
+    .nav-bar li {
+    font-size: 11px;
+    margin-right: 0.7vw;
+}
+
+.box-buttons {
+    margin-right: 30px;
+    margin-left: 10px;
+    gap: 12px;
+}
+
+#cadastroBtn {
+    width: 60px;
+    height: 30px;
+    font-size: 10px;
+}
+
+#loginBtn {
+    width: 55px;
+    height: 30px;
+    font-size: 10px;
+}
+
+.logo-img {
+    width: 70px;
+    height: 70px;
+}
+
+.menu a.logo {
+    margin-left: 15px;
+}
+
+}
+
+@media (min-width: 1000px) and (max-width: 1100px) {
+    .nav-bar li {
+    font-size: 12px;
+    margin-right: 0.8vw;
+}
+
+.box-buttons {
+    margin-right: 30px;
+    margin-left: 10px;
+    gap: 12px;
+}
+
+#cadastroBtn {
+    width: 70px;
+    height: 30px;
+    font-size: 10px;
+}
+
+#loginBtn {
+    width: 55px;
+    height: 30px;
+    font-size: 10px;
+}
+
+.logo-img {
+    width: 80px;
+    height: 80px;
+}
+
+.menu a.logo {
+    margin-left: 30px;
+}
+}
+@media (min-width: 1100px) and (max-width: 1350px) {
+    .nav-bar li {
+    font-size: 13px;
+    margin-right: 1vw;
+}
+
+.box-buttons {
+    margin-right: 30px;
+    margin-left: 10px;
+    gap: 12px;
+}
+
+#cadastroBtn {
+    width: 80px;
+    height: 30px;
+    font-size: 10px;
+}
+
+#loginBtn {
+    width: 65px;
+    height: 30px;
+    font-size: 10px;
+}
+
+.logo-img {
+    width: 80px;
+    height: 80px;
+}
+
+.menu a.logo {
+    margin-left: 30px;
+}
+}
+
+@media (min-width: 1350px) and (max-width: 1550px) {
+    .nav-bar li {
+    font-size: 14px;
+    margin-right: 1.5vw;
+}
+
+.box-buttons {
+    margin-left: 10px;
+}
+
+#cadastroBtn {
+    width: 90px;
+    font-size: 12px;
+}
+
+#loginBtn {
+    width: 75px;
+    font-size: 12px;
+}
+
+.logo-img {
+    width: 80px;
+    height: 80px;
+}
+
+.menu a.logo {
+    margin-left: 30px;
+}
+}
+
+@media (min-width: 1550px) and (max-width: 1774px) {
+.nav-bar li {
+    font-size: 16px;
+}
+
+#cadastroBtn {
+    width: 100px;
+    font-size: 12px;
+}
+
+#loginBtn {
+    width: 85px;
+    font-size: 12px;
+}
+}
+
+
+</style>
+
+<script>
+    
+</script>
+</head>
+<body>
+<header>
+    <article class="menu-device">
+        <i class="fa-solid fa-bars" id="menu-smart"></i>
+        <section class="right-icons">
+            <i class="fa-solid fa-user" id="user"></i>
+            <i class="fa-solid fa-gear" id="config"></i>
+        </section>
+    </article>
+    <article class="menu">
+        <a href="#" class="logo"><img src="imagens/logo-menu.png" alt="" class="logo-img"></a>
+        <ul class="nav-bar">
+            <li><a href="/">Home</a></li>
+            <li><a href="psicologos">Psicólogos</a></li>
+            <li><a href="calendario">Calendário</a></li>
+            <li><a href="comunidade">Comunidades</a></li>
+            <li><a href="chat">Chat</a></li>
+            <li><a href="sobrenos">Sobre nós</a></li>
+        </ul>
+        <section class="box-buttons">
+            <section class="logins">
+                <input type="button" id="loginBtn" value="Entrar"></a>
+                <section class="loginssub">
+                    <a href="loginpacientes"><input type="button" id="loginBtnpac" value="Paciente"></a>
+                    <a href="logindependentes"><input type="button" id="loginBtndep" value="Menor"></a>
+                    <a href="loginpsicologos"><input type="button" id="loginBtnpsic" value="Psicólogo"></a>
+                </section>
+            </section>
+            <section class="sign">
+                <input type="button" id="cadastroBtn" value="Cadastrar">
+                <section class="signsub">
+                    <a href="cadastropacientes"><input type="button" id="signBtnpac" value="Paciente"></a>
+                    <a href="cadastromenor"><input type="button" id="signBtndep" value="Menor"></a>
+                    <a href="cadastropsicologos"><input type="button" id="signBtnpsic" value="Psicólogo"></a>
+                </section>
+            </section>
+        </section>
+    </article>
+</header>
+</body>

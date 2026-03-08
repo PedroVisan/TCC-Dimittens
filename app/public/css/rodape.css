@@ -1,0 +1,576 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    display: flex;
+    background-color: #422040;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0 200px 0;
+}
+
+#sobre-nos {
+    height: 224px;
+}
+
+.rodape-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 0px 30px 0 50px;
+    border-right: 1px solid #ec8d26;
+    padding-right: 70px;
+}
+
+.rodape-infos h1 {
+    font-family: "Raleway SemiBold", "Raleway", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 28px;
+    line-height: normal;
+}
+
+.rodape-infos h2 {
+    font-family: "Raleway Medium", "Raleway", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: normal;
+    font-size: 20px;
+}
+
+.contatos {
+    font-family: "Raleway Medium", "Raleway", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: normal;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.direitos-rodape {
+    font-family: "Raleway Medium", "Raleway", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: normal;
+    font-size: 20px;
+}
+
+.rodape-contatos {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.rodape-contatos i {
+    color: white;
+    font-size: 20px;
+}
+
+.logo-rodape {
+    display: flex;
+    margin-right: 80px;
+}
+
+.logo-rodape img {
+    width: 250px;
+    height: 250px;
+}
+
+.item-icon {
+    align-items: center;
+    display: flex;
+}
+
+.icons-contatos {
+    display: flex;
+    gap: 15px;
+    margin: 30px 0 30px 0;
+}
+
+@media (min-width: 1600px) and (max-width: 1750px) {
+    .logo-rodape img {
+        width: 175px;
+        height: 175px;
+    }
+
+    .logo-rodape {
+        display: flex;
+        margin-right: 50px;
+    }
+
+    .rodape-contatos {
+        margin-left: 60px;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1600px) {
+    .logo-rodape img {
+        width: 175px;
+        height: 175px;
+    }
+
+    .logo-rodape {
+        display: flex;
+        margin-right: 50px;
+    }
+
+    .rodape-contatos {
+        margin-left: 50px;
+    }
+
+    .rodape-infos {
+        gap: 25px;
+        margin: 0px 30px 0 30px;
+        padding-right: 70px;
+    }
+
+    .rodape-infos h1 {
+        font-size: 20px;
+    }
+    
+    .rodape-infos h2 {
+        font-family: "Raleway Medium", "Raleway", sans-serif;
+        font-weight: 500;
+        color: #ffffff;
+        line-height: normal;
+        font-size: 16px;
+    }
+    
+    .rodape-contatos h2 {
+        font-size: 16px;
+    }
+
+    #sobre-nos {
+        height: 195px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .logo-rodape img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .logo-rodape {
+        display: flex;
+        margin-right: 50px;
+    }
+
+    .rodape-contatos {
+        margin-left: 30px;
+    }
+
+    .rodape-infos {
+        gap: 25px;
+        margin: 0px 15px 0 15px;
+        padding-right: 70px;
+    }
+
+    .rodape-infos h1 {
+        font-size: 20px;
+    }
+    
+    .rodape-infos h2 {
+        font-family: "Raleway Medium", "Raleway", sans-serif;
+        font-weight: 500;
+        color: #ffffff;
+        line-height: normal;
+        font-size: 16px;
+    }
+    
+    .rodape-contatos h2 {
+        font-size: 16px;
+    }
+
+    #sobre-nos {
+        height: 195px;
+        margin: 0 0 0 15px;
+    }
+
+    #suporte {
+        padding-left: 10px;
+    }
+}
+
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .logo-rodape img {
+        width: 125px;
+        height: 125px;
+    }
+
+    .logo-rodape {
+        display: flex;
+        margin-right: 30px;
+    }
+
+    .rodape-contatos {
+        margin-left: 30px;
+    }
+
+    .rodape-infos {
+        gap: 25px;
+        margin: 0px 15px 0 15px;
+        padding-right: 50px;
+    }
+
+    .rodape-infos h1 {
+        font-size: 16px;
+    }
+    
+    .rodape-infos h2 {
+        font-family: "Raleway Medium", "Raleway", sans-serif;
+        font-weight: 500;
+        color: #ffffff;
+        line-height: normal;
+        font-size: 14px;
+    }
+    
+    .rodape-contatos h2 {
+        font-size: 14px;
+    }
+
+    #sobre-nos {
+        height: 182px;
+        padding-right: 30px;
+    }
+
+    #suporte {
+        padding-left: 10px;
+    }
+}
+
+@media (min-width: 850px) and (max-width: 1000px) {
+    .logo-rodape img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo-rodape {
+        display: flex;
+        margin-right: 30px;
+    }
+
+    .rodape-contatos {
+        margin-left: 30px;
+    }
+
+    .rodape-infos {
+        gap: 25px;
+        margin: 0px 10px 0 10px;
+        padding-right: 30px;
+    }
+
+    .rodape-infos h1 {
+        font-size: 16px;
+    }
+    
+    .rodape-infos h2 {
+        font-family: "Raleway Medium", "Raleway", sans-serif;
+        font-weight: 500;
+        color: #ffffff;
+        line-height: normal;
+        font-size: 14px;
+    }
+    
+    .rodape-contatos h2 {
+        font-size: 12px;
+    }
+
+    #sobre-nos {
+        height: 182px;
+        padding-right: 30px;
+    }
+
+    .icons-contatos {
+        display: flex;
+        gap: 10px;
+        margin: 30px 0 30px 0;
+    }
+
+    .rodape-contatos i {
+        color: white;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 850px) {
+    .logo-rodape img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo-rodape {
+        display: flex;
+        margin-right: 30px;
+    }
+
+    .rodape-contatos {
+        margin-left: 30px;
+    }
+
+    .rodape-infos {
+        gap: 25px;
+        margin: 0px 8px 0 8px;
+        padding-right: 30px;
+    }
+
+    .rodape-infos h1 {
+        font-size: 14px;
+    }
+    
+    .rodape-infos h2 {
+        font-family: "Raleway Medium", "Raleway", sans-serif;
+        font-weight: 500;
+        color: #ffffff;
+        line-height: normal;
+        font-size: 12px;
+    }
+    
+    .rodape-contatos h2 {
+        font-size: 12px;
+    }
+
+    #sobre-nos {
+        height: 182px;
+        padding-right: 20px;
+    }
+
+    .icons-contatos {
+        display: flex;
+        gap: 10px;
+        margin: 30px 0 30px 0;
+    }
+
+    .rodape-contatos i {
+        color: white;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    footer {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0 50px 0;
+    }
+
+    .logo-rodape img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo-rodape {
+        margin-bottom: 40px;
+        display: flex;
+        margin-right: 30px;
+    }
+
+    .rodape-contatos {
+        margin: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rodape-infos {
+        margin: 0px 0 20px 0;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        width: 163px;
+        border-right: 0;
+        border-bottom: 1px solid #ec8d26;
+        align-items: center;
+    }
+
+    .rodape-infos h1 {
+        font-size: 14px;
+    }
+    
+    .rodape-infos h2 {
+        font-family: "Raleway Medium", "Raleway", sans-serif;
+        font-weight: 500;
+        color: #ffffff;
+        line-height: normal;
+        font-size: 12px;
+    }
+    
+    .rodape-contatos h2 {
+        font-size: 12px;
+    }
+
+    #sobre-nos {
+        height: 182px;
+        padding-right: 20px;
+    }
+
+    .icons-contatos {
+        display: flex;
+        gap: 10px;
+        margin: 30px 0 30px 0;
+    }
+
+    .rodape-contatos i {
+        color: white;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 600px) {
+
+    footer {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0 50px 0;
+    }
+
+    .logo-rodape img {
+        width: 125px;
+        height: 125px;
+    }
+
+    .logo-rodape {
+        margin-bottom: 40px;
+        display: flex;
+        margin-right: 30px;
+    }
+
+    .rodape-contatos {
+        margin: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rodape-infos {
+        margin: 0px 0 20px 0;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        width: 163px;
+        border-right: 0;
+        border-bottom: 1px solid #ec8d26;
+        align-items: center;
+    }
+
+    .rodape-infos h1 {
+        font-size: 18px;
+    }
+    
+    .rodape-infos h2 {
+        font-family: "Raleway Medium", "Raleway", sans-serif;
+        font-weight: 500;
+        color: #ffffff;
+        line-height: normal;
+        font-size: 14px;
+    }
+    
+    .rodape-contatos h2 {
+        font-size: 16px;
+    }
+
+    #sobre-nos {
+        height: 182px;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    .icons-contatos {
+        display: flex;
+        gap: 10px;
+        margin: 30px 0 30px 0;
+    }
+
+    .rodape-contatos i {
+        color: white;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+
+    footer {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0 50px 0;
+    }
+
+    .logo-rodape img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .logo-rodape {
+        margin-bottom: 40px;
+        display: flex;
+        margin-right: 30px;
+    }
+
+    .rodape-contatos {
+        margin: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rodape-infos {
+        margin: 0px 0 20px 0;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        width: 163px;
+        border-right: 0;
+        border-bottom: 1px solid #ec8d26;
+        align-items: center;
+    }
+
+    .rodape-infos h1 {
+        font-size: 22px;
+    }
+    
+    .rodape-infos h2 {
+        font-family: "Raleway Medium", "Raleway", sans-serif;
+        font-weight: 500;
+        color: #ffffff;
+        line-height: normal;
+        font-size: 14px;
+    }
+    
+    .rodape-contatos h2 {
+        font-size: 18px;
+    }
+
+    #sobre-nos {
+        height: 182px;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    .icons-contatos {
+        display: flex;
+        gap: 10px;
+        margin: 30px 0 30px 0;
+    }
+
+    .rodape-contatos i {
+        color: white;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+

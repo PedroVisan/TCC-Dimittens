@@ -1,0 +1,42 @@
+body {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 1800px;
+    height: 850px;
+  }
+  
+  
+  article {
+    width: 1550px;
+    height: 865px;
+    border-radius: 25px;
+    border: 1px solid #422040;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  h1 {
+    box-sizing: border-box;
+    font-family: "Raleway SemiBold", "Raleway", sans-serif;
+    font-weight: 600;
+    color: #422040;
+    font-size: 35px;
+    width: fit-content;
+  }
+
+  .text {
+    margin: 0;
+    width: fit-content;
+  }
+
+  .posts {
+    width: 1000px;
+    height: 100px;
+    background-color: #422040;
+  }

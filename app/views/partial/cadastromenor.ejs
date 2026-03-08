@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Menor de Idade</title>
+    <link rel="stylesheet" href="css/cadastromenor.css">
+</head>
+<body>
+    <main class="container">
+        <section class="logotipo">
+            <img src="imagens/logo-amarelo.png" alt="Logotipo Dimittens" id="logo">
+        </section>
+        <h1 class="title">Bem Vindo(a) a Dimittens</h1>
+        
+        <form method="post" action="/cadastromenor" id="cadastroForm">
+            <section class="input-field">
+                <label for="username" class="lbln">Nome Completo</label>
+                <input type="text" name="username" class="input" id="username" placeholder="Digite o nome" value="<%= valores.username %>" required>
+                <span class="warning"></span>
+
+                <label for="userdocuments" class="lbl">CPF</label>
+                <input type="text" name="userdocuments" class="input" id="userdocuments" placeholder="Digite o CPF" value="<%= valores.userdocuments %>" required>
+                <span class="warning"></span>
+
+                <label for="userdatemenor" class="lbl">Data de Nascimento</label>
+                <input type="date" name="userdatemenor" class="input" id="userdatemenor" value="<%= valores.userdatemenor%>" required>
+                <span class="warning"></span>
+
+                <label for="usernameresponsavel" class="lbl">Nome Completo do Responsável</label>
+                <input type="text" name="usernameresponsavel" class="input" id="usernameresponsavel" placeholder="Digite seu nome" value="<%= valores.usernameresponsavel %>" required>
+                <span class="warning"></span>
+
+                <label for="userresponsaveldocuments" class="lbl">CPF do Responsável</label>
+                <input type="text" name="userresponsaveldocuments" class="input" id="userresponsaveldocuments" placeholder="Digite o CPF:" value="<%= valores.userresponsaveldocuments%>" required>
+                <span class="warning"></span>
+
+                <label for="useremail" class="lbl">Email</label>
+                <input type="text" name="useremail" class="input" id="useremail" placeholder="Digite seu email" value="<%= valores.useremail %>" required>
+                <span class="warning"></span>
+                <% if (errorsList && errorsList.length > 0) { %>
+                    <span class="warning"><%= errorsList[0].msg %></span>
+                <% } %>
+
+                <label for="userpassword" class="lbl">Criar Senha</label>
+                <input type="password" name="userpassword" class="input" id="userpassword" placeholder="Digite sua senha" value="<%= valores.userpassword %>" required>
+                <span class="warning"></span>
+
+                <label for="usercpassword" class="lbl">Confirmar Senha</label>
+                <input type="password" name="usercpassword" class="input" id="usercpassword" placeholder="Digite sua senha" required>
+                <span class="warning"></span>
+            </section>
+
+            <section class="aviso-formatacao">
+                A senha deve ter maiúscula, número, especial (!@#$%&*) e Email válido (ex: usuario@dominio.com).</section>
+        
+            <section class="continue">
+                <input type="submit" value="Continuar" id="continuar">
+            </section>
+        </form>
+
+        <section class="signup-conditions">
+            <p id="termos-de-serviço" class="sign">Ao continuar, você concorda com os <br>
+                <a href="#"><strong>Termos de Serviço</strong></a> da Dimittens e confirma que <br>leu a nossa <a href="#"><strong>Política de Privacidade</strong></a> 
+            </p>
+            <hr>
+            <p id="aviso-entrar" class="sign"><strong>Já tem uma conta? <a href="logindependentes">Entrar</strong></a></p>
+        </section>
+    </main>
+    <script src="javascript/validacao.js"></script>
+</body>
+</html>

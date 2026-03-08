@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de Monitoramento</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/dashboard-monitoramento.css" />
+
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Estatísticas Gerais -->
+    <div class="stats-container">
+      <div class="stat-card">
+        <h3>Total de Consultas Hoje</h3>
+        <div class="value"><%= stats.consultasHoje %></div>
+      </div>
+      <div class="stat-card">
+        <h3>Taxa de Comparecimento</h3>
+        <div class="value"><%= stats.taxaComparecimento %>%</div>
+      </div>
+      <div class="stat-card">
+        <h3>Consultas Canceladas</h3>
+        <div class="value"><%= stats.consultasCanceladas %></div>
+      </div>
+      <div class="stat-card">
+        <h3>Média de Valor/Consulta</h3>
+        <div class="value">R$ <%= stats.mediaValorConsulta %></div>
+      </div>
+    </div>
+
+    <!-- Tabela de Consultas Recentes -->
+    <div class="data-table">
+      <div class="table-header">
+        <h2>Consultas Recentes</h2>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Data/Hora</th>
+            <th>Paciente</th>
+            <th>Psicólogo</th>
+            <th>Status</th>
+            <th>Modalidade</th>
+            <th>Valor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% consultas.forEach(consulta => { %>
+            <tr>
+              <td><%= new Date(consulta.DATAHORA_CONSULTAS).toLocaleString() %></td>
+              <td><%= consulta.NOME_USUARIO %></td>
+              <td><%= consulta.NOME_PSICOLOGO %></td>
+              <td>
+                <span class="status-badge status-<%= consulta.STATUS_CONSULTAS.toLowerCase() %>">
+                  <%= consulta.STATUS_CONSULTAS %>
+                </span>
+              </td>
+              <td><%= consulta.PREFERENCIAS_REMOTAS_CONSULTAS %></td>
+              <td>R$ <%= consulta.VALOR_CONSULTA %></td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Tabela de Denúncias -->
+    <div class="data-table">
+      <div class="table-header">
+        <h2>Denúncias Recentes</h2>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Denunciante</th>
+            <th>Denunciado</th>
+            <th>Motivo</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% denuncias.forEach(denuncia => { %>
+            <tr>
+              <td><%= new Date(denuncia.DATA_DENUNCIA).toLocaleString() %></td>
+              <td><%= denuncia.NOME_DENUNCIANTE %></td>
+              <td><%= denuncia.NOME_DENUNCIADO %></td>
+              <td><%= denuncia.TEXTO_DENUNCIA %></td>
+              <td>
+                <button 
+                  class="banir-button" 
+                  data-id="<%= denuncia.ID_USUARIO %>"
+                  onclick="banirUsuario(<%= denuncia.ID_USUARIO %>)">
+                  <i class="fas fa-user-slash"></i> Banir
+                </button>
+              </td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="js/dashboard-monitoramento.js"></script>
+</body>
+</html>

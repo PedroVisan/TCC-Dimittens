@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Metadados -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidades</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="/css/community.css">
+</head>
+<body>
+    <%- include('../partial/header') %>
+
+    <div class="container mt-4">
+        <!-- Título da Página -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1 class="page-title">Comunidades</h1>
+            <a href="/criarcomunidade" class="btn btn-primary">+ Criar Comunidade</a>
+        </div>
+
+        <!-- Mensagem de sucesso, caso exista -->
+        <% if (message) { %>
+            <div class="alert alert-success">
+                <%= message %>
+            </div>
+        <% } %>
+
+        <!-- Lista de comunidades -->
+        <div class="row">
+            <% if (communities && communities.length > 0) { %>
+                <% communities.forEach(community => { %>
+                    <div class="col-md-6 mb-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title"><%= community.NOME_COMUNIDADE %></h5>
+                                <p class="card-text"><%= community.BIOGRAFIA_COMUNIDADE %></p>
+                                <div class="d-flex justify-content-between">
+                                    <a href="/community/<%= community.ID_COMUNIDADE %>" class="btn btn-outline-info">Ver Detalhes</a>
+                                    <a href="/community/<%= community.ID_COMUNIDADE %>/posts" class="btn btn-success">Entrar e Postar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <% }); %>
+            <% } else { %>
+                <div class="col-12">
+                    <p class="text-muted text-center">Nenhuma comunidade encontrada.</p>
+                </div>
+            <% } %>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS Personalizado -->
+    <script src="/javascript/community.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+
+    <title>Postagem</title>
+    <link rel="stylesheet" href="css/criarpostagem.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <main class="main-criarpostagem">
+        <article class="box-post">
+            <section class="topo">
+                <section class="logo-close">
+                    <section class="topo-img"><img src="imagens/logo-laranja.png" alt=""></section>
+                    <section class="topo-icon"><i class="fa-solid fa-xmark"></i></section>
+                </section>
+                <section class="titulo-box">
+                    <h1 class="titulo">Criar Post</h1>
+                </section>
+                <section class="divisoria-box">
+                    <hr class="divisoria-topo">
+                </section>
+            </section>
+
+            <section class="input-file">
+                <label class="picture" for="picture__input" tabIndex="0">
+                    <span class="picture__image"></span>
+                  </label>
+                  
+                  <input type="file" name="picture__input" id="picture__input">
+            </section>
+
+                <form method="POST" action="/postagem" enctype="multipart/form-data">
+                    <section class="input-file">
+                        <label class="picture" for="picture__input" tabIndex="0">
+                            <span class="picture__image"></span>
+                        </label>
+                        <input type="file" name="picture__input" id="picture__input" required>
+                    </section>">
+                    <section class="box-inputs">
+                        <section class="input-label">
+                            <label for="input-text" class="label-inputs">Título</label>
+                            <input type="text" placeholder="Adicione um título" id="input-text">
+                        </section>
+                        <section>
+                            <label for="tipodepost" class="label-inputs">Tipo de postagem</label>
+                            <select name="tipodepost" id="tipodepost">
+                                <option value="info" disabled selected>Escolha o tipo da sua postagem</option>
+                                <option value="pergunta">Pergunta</option>
+                                <option value="mercedes">Enquete</option>
+                            </select>
+                        </section>
+                    </section>
+
+                    <section class="box-select">
+                            <section class="select-label">
+                                <label for="topicodapost" class="label-select">Tópico da postagem</label>
+                                <select name="topicodapost" id="topicodapost">
+                                    <option value="info" disabled selected>Escolha o tópico da sua postagem</option>
+                                    <option value="pergunta">Pergunta</option>
+                                    <option value="mercedes">Enquete</option>
+                                </select>
+                            </section>
+
+                                <section class="select-label"> 
+                                    <label for="escolhcomunidade" class="label-select" id="labelcomunidade">Comunidade</label>
+                                    <select name="tipodepost" id="escolhacomunidade">
+                                        <option value="info" disabled selected>Selecione uma comunidade</option>
+                                        <option value="pergunta">Pergunta</option>
+                                        <option value="mercedes">Enquete</option>
+                                    </select>
+                                </section>
+                    </section>
+
+                    <section class="submit-box">
+                        <input type="submit" value="Postar" id="postar">
+                    </section>
+                </form>
+        </article>
+    </main>
+    <script src="javascript/criarpostagem.js"></script>
+</body>
+</html>

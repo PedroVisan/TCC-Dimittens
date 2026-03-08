@@ -1,0 +1,446 @@
+<title>Seção de Testemunhas</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+    :root {
+        --cor-principal: #422040;
+        --cor-secundaria: #ec8d26;
+        --cor-tercearia: #ffd700;
+        --cor-quartearia: #dfa5d9;
+        --branco: #ffffff;
+        --cor-light: #ced6e0;
+        --cor-dark: #2f3542;
+        --box-shadow: rgb(0 0 2 / 35%) 0px 20px 30px -10px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    *,
+    ::before,
+    ::after {
+        box-sizing: border-box;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    a,
+    button,
+    div[role="button"] {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-weight: 500;
+        line-height: none;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+
+
+    .site {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        max-width: 1100px;
+        width: 100%;
+        padding: 0 30px;
+        margin: 0 auto;
+    }
+
+    .testi {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .testi .head {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .testi .head h3 {
+        font: 34px;
+        font-weight: 800;
+    }
+
+    .testi .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        padding: 30px 0;
+    }
+
+    .site {
+        background-color: var(--branco);
+        width: 100vw;
+        border-top: 1px solid var(--cor-light);
+        height: max-content;
+        padding: 100px 0 100px 0;
+    }
+
+    .testi .thumbnail {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        flex-shrink: 0;
+    }
+
+    .testi .thumbnail img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transform: scale(2);
+        transition: transform .5s;
+    }
+
+    .testi .swiper-slide-active .thumbnail img {
+        transform: scale(1);
+    }
+
+    .testi .thumbnail::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: calc(100% + 30px);
+        height: calc(100% + 10px);
+        background-color: var(--cor-principal);
+        border-radius: 50%;
+        z-index: -1;
+        box-shadow: var(--box-shadow);
+        transition: border-radius .5s .3s;
+    }
+
+    .testi .swiper-slide-active .thumbnail::before {
+        border-radius: 33% 67% 50% 50% / 50% 14% 86% 50%;
+    }
+
+    .testi .aside {
+        position: relative;
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+    }
+
+    .testi .aside>p {
+        position: relative;
+        font-size: 14px;
+        line-height: normal;
+        margin-bottom: 30px;
+        opacity: 0;
+        color: #4220408d;
+        transform: translateX(10%);
+        transition: transform 1s, opacity 1s;
+    }
+
+    .testi .swiper-slide-active .aside>p {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .testi .aside>p::before,
+    .testi .aside>p::before {
+        font-family: serif;
+        font-size: 80px;
+        font-weight: 800;
+        line-height: 1;
+        position: absolute;
+        color: var(--cor-light);
+        height: 40px;
+        z-index: -1;
+    }
+
+    .testi .aside>p::before {
+        content: open-quote;
+        top: -40px;
+        left: 10px;
+    }
+
+    .testi .aside>p::after {
+        content: close-quote;
+        right: 0;
+    }
+
+    .testi .aside .name {
+        position: relative;
+        width: fit-content;
+        line-height: 1;
+        opacity: 0;
+        transform: translateX(30px);
+        transform: transform 1s .2s, opacity 1s .3s;
+    }
+
+    .testi .swiper-slide-active .name {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .testi .aside .name h4 {
+        font-size: 22px;
+        font-weight: 800;
+        color: var(--cor-principal);
+        opacity: .8;
+    }
+
+    .testi .aside .name p {
+        font-size: 12px;
+        text-align: right;
+        color: var(--cor-quartearia);
+    }
+
+
+    /*/ slider /*/
+
+    .testi :is(.swiper-button-next, .swiper-button-prev) {
+        background-color: var(--cor-light);
+        top: 35%;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        transition: background-color .3s;
+        box-shadow: var(--box-shadow);
+    }
+
+    .testi :is(.swiper-button-next, .swiper-button-prev):hover {
+        background-color: var(--cor-principal);
+    }
+
+    .testi :is(.swiper-button-next, .swiper-button-prev)::after {
+        font-size: 16px;
+        font-weight: 800;
+        color: var(--branco);
+    }
+
+    .testi .swiper-pagination {
+        position: relative;
+    }
+
+    .testi .swiper-pagination span {
+        background-color: var(--cor-light);
+        transition: width .3s;
+        opacity: 1;
+    }
+
+    .testi .swiper-pagination .swiper-pagination-bullet-active {
+        width: 26px;
+        border-radius: 4px;
+        background-color: var(--cor-principal);
+    }
+
+
+
+
+
+
+    @media screen and (min-width:768px) {
+        .testi .wrapper {
+            flex-direction: row;
+            padding: 30px 100px;
+        }
+
+        .testi .thumbnail {
+            width: 200px;
+            height: 200px;
+        }
+
+        .testi :is(.swiper-button-next, .swiper-button-prev) {
+            top: 50%;
+        }
+
+        .testi .swiper-slide-active .name {
+            transform: translateX(-50px);
+        }
+    }
+</style>
+</head>
+
+<body>
+    <main>
+        <div id="pages" class="site">
+            <div class="container">
+                <div class="testi">
+                    <div class="head">
+                        <h3>Pessoas que já passaram por nós</h3>
+                        <p></p>
+                    </div>
+                    <div class="body swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="wrapper">
+                                    <div class="thumbnail">
+                                        <img src="imagens/profile4.jpg" alt="">
+                                    </div>
+                                    <div class="aside">
+                                        <p>Dimittens revolucionou a forma como as terapias online são conduzidas. A variedade de psicólogos disponíveis no site garante que os pacientes encontrem o profissional mais adequado para suas necessidades específicas. O processo de busca é simplificado, permitindo que os pacientes façam a escolha certa sem dificuldades.</p>
+                                        <div class="name">
+                                            <h4>Carlos Santoro</h4>
+                                            <p>Empresário</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="wrapper">
+                                    <div class="thumbnail">
+                                        <img src="imagens/profile2.jpg" alt="">
+                                    </div>
+                                    <div class="aside">
+                                        <p>O painel do paciente é extremamente útil e bem-organizado. A funcionalidade de calendário é clara e eficiente, evitando confusões de agendamento. Além disso, a possibilidade de registrar emoções e escrever notas contribui significativamente para o desenvolvimento do paciente, fornecendo dados importantes para as sessões terapêuticas.</p>
+                                        <div class="name">
+                                            <h4>Larissa Fernandes</h4>
+                                            <p>Estilista</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="wrapper">
+                                    <div class="thumbnail">
+                                        <img src="imagens/profile7.jpg" alt="">
+                                    </div>
+                                    <div class="aside">
+                                        <p>
+                                            Oferece atendimento especializado com uma interface intuitiva, tornando o
+                                            cuidado com a saúde mental acessível e acolhedor. Os profissionais são altamente
+                                            competentes e atenciosos.</p>
+                                        <div class="name">
+                                            <h4>Igor Santos</h4>
+                                            <p>Desenvolvedor de Software</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="wrapper">
+                                    <div class="thumbnail">
+                                        <img src="imagens/profile5.jpg" alt="">
+                                    </div>
+                                    <div class="aside">
+                                        <p>A página de comunidade é uma adição valiosa. Interagir com outros pacientes e compartilhar experiências enriquece o processo de cura e crescimento pessoal. A troca de informações e apoio mútuo fortalece a rede de suporte, tornando a jornada terapêutica mais enriquecedora e menos solitária.</p>
+                                        <div class="name">
+                                            <h4>Bruno Oliveira</h4>
+                                            <p>Engenheiro Elétrico</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="wrapper">
+                                    <div class="thumbnail">
+                                        <img src="imagens/profile6.jpg" alt="">
+                                    </div>
+                                    <div class="aside">
+                                        <p>Dimittens é uma plataforma inovadora para terapias online, oferecendo um serviço de qualidade e acessível. A diversidade de psicólogos disponíveis facilita encontrar um terapeuta que realmente compreenda as necessidades individuais dos pacientes. O site é fácil de usar, tornando a experiência agradável desde o primeiro acesso.</p>
+                                        <div class="name">
+                                            <h4>Maria Fernanda</h4>
+                                            <p>Cozinheira</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="wrapper">
+                                    <div class="thumbnail">
+                                        <img src="imagens/profile3.jpg" alt="">
+                                    </div>
+                                    <div class="aside">
+                                        <p>A comunidade dentro do site é um recurso excepcional. Os pacientes podem participar de discussões, comentar sobre tópicos relevantes e sentir-se parte de um grupo de apoio. Esta interação comunitária é essencial para muitos, oferecendo suporte emocional e compartilhamento de experiências valiosas durante a jornada terapêutica.</p>
+                                        <div class="name">
+                                            <h4>Rafel Ramos</h4>
+                                            <p>Garçom</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="wrapper">
+                                    <div class="thumbnail">
+                                        <img src="imagens/profile1.jpg" alt="">
+                                    </div>
+                                    <div class="aside">
+                                        <p>O painel do paciente é uma ferramenta bem projetada. A funcionalidade de calendário facilita a organização das consultas, enquanto a opção de escrever notas e registrar emoções oferece um acompanhamento detalhado do progresso terapêutico. Essa funcionalidade ajuda a manter o paciente engajado e consciente de suas evoluções.</p>
+                                        <div class="name">
+                                            <h4>Carla Meneguel</h4>
+                                            <p>Vendedora de Imovéis</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="wrapper">
+                                    <div class="thumbnail">
+                                        <img src="imagens/profile8.jpg" alt="">
+                                    </div>
+                                    <div class="aside">
+                                        <p>A comunidade dentro do site é um recurso valioso. Participar de discussões e compartilhar experiências com outros pacientes oferece um apoio adicional que muitas vezes é necessário. Essa interação promove um ambiente de solidariedade e compreensão, essencial para o bem-estar emocional.</p>
+                                        <div class="name">
+                                            <h4>Mari Gaspar</h4>
+                                            <p>Modelo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoHeigh: true,
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+    </script>

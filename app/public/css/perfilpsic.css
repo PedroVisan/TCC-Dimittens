@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: flex-start; /* Alinha os itens no topo */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    background-color: #422040; /* Cor de fundo */
+    width: 100%;
+}
+
+.info-1 {
+    width: 100%;
+    max-width: 360px; /* Largura máxima do artigo */
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #422040;
+    box-shadow: none;
+    flex: 1;
+    margin-right: 20px;
+}
+
+#user {
+    font-size: 80px;
+    color: white;
+    margin: 60px 0 0 0; /* Alinha o ícone de usuário à esquerda, sem margem esquerda */
+}
+
+h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: left; /* Alinha o texto à esquerda */
+    margin: 10px 0 0 0; /* Ajusta a margem superior */
+}
+
+hr {
+    width: 234px;
+    height: 1px;
+    color: white;
+    margin: 23px 0; /* Alinha a linha horizontal à esquerda dentro do contêiner */
+    background-color: white;
+    border: none;
+}
+
+.opt {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha as opções à esquerda */
+    width: 100%;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinha o conteúdo dentro da opção à esquerda */
+    width: 316px;
+    height: 56px;
+    margin: 10px 0; /* Adiciona espaçamento entre os itens */
+    border-radius: 15px; /* Bordas arredondadas, opcional */
+    cursor: pointer; /* Adiciona cursor pointer */
+    background-color: rgba(255, 255, 255, 0); /* Fundo padrão invisível */
+    transition: background-color 0.3s ease;
+}
+
+.options h3 {
+    font-family: "Raleway SemiBold", "Raleway", sans-serif;
+    font-size: 20px;
+    margin: 0 0 0 40px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+#pen, #calendar, #statistic, #save, #help, #left {
+    font-size: 27px;
+    color: white;
+}
+
+.radio {
+    display: none; /* Oculta os inputs de rádio */
+}
+
+.radio:checked + .options {
+    background-color: rgba(255, 255, 255, 0.3); /* Cor de fundo quando ativo */
+}
+
+#opt {
+    margin-top: 70px;
+}
+
+.editarperf, .consultpsic, .salvopsic, .needhelp {
+    display: none;
+}
+
+.info-2 {
+    margin-top: 0;
+}

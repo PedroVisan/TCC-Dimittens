@@ -1,0 +1,372 @@
+body {
+    background-color: #e3e9f7aa;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+.nav-bar {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+    margin-right: 153px;
+    flex: 1;
+}
+
+.nav-bar li {
+    margin: 0 2vw;
+    font-family: "Raleway Medium", "Raleway", "Raleway", sans-serif;
+    font-size: 20px;
+
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #422040;
+}
+
+.menu a.logo {
+    margin-left: 25px;
+    display: flex;
+    margin-top: 5px;
+}
+
+.right-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+}
+
+.menu {
+    background: linear-gradient(to right, #422040 17.20%, white 17.20%);
+    width: 75.78vw;
+    height: 75px;
+    border-radius: 45px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 36px auto;
+    box-sizing: border-box;
+    z-index: 2;
+    position: relative;
+    box-shadow: 5px 5px 5px 0px rgba(66, 32, 64, 0.35);
+}
+
+.menu-device {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: 25px;
+    width: 100%;
+}
+
+.menu-device i {
+    color: white;
+    font-size: 38px;
+}
+
+.filtros {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+}
+
+.box-roxa {
+    background-color: #422040;
+    width: max-content;
+    height: max-content;
+    padding: 30px 100px 30px 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 40px;
+    margin-top: 70px;
+}
+
+.box-search {
+    width: max-content;
+}
+
+.box-search h4 {
+    margin-left: 10px;
+}
+
+#especialidade {
+    margin-left: 10px;
+}
+
+.option {
+    display: flex;
+    width: max-content;
+    gap: 80px;
+    columns: 2;
+}
+
+.col1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-box {
+    margin-top: 10%;
+    margin-left: 21%;
+    height: max-content;
+    width: max-content;
+    white-space: nowrap;
+}
+
+#button-box2 {
+    border-radius: 10px;
+    height: 34px;
+    width: 117px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2,
+h3,
+h4 {
+    color: #dfa5d9;
+    font-family: "Raleway SemiBold", "Raleway", sans-serif;
+}
+
+h4 {
+    margin-left: 23%;
+    font-family: "Raleway Medium", "Raleway", sans-serif;
+}
+
+#abordagem {
+    flex-direction: column;
+}
+
+label{
+    color: #dfa5d9;
+    display: block;
+    margin-bottom: 5px;
+}
+
+select{
+    width: 360px;
+    height: 50px;
+    border-radius: 17px;
+    margin-bottom: 20px;
+}
+
+#btn1 {
+    width: 117px;
+    height: 34px;
+    border-radius: 12px;
+}
+
+#btn2 {
+    height: 34px;
+    width: 90px;
+    border-radius: 12px;
+}
+
+.btn {
+    margin-left: 150px;
+    margin-top: 40px;
+}
+
+p {
+    font-family: "Raleway Medium", "Raleway", sans-serif;
+    font-weight: 500;
+    color: rgba(66, 32, 64, 0.7);
+    line-height: normal;
+}
+
+
+input {
+    width: 360px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-radius: 17px;
+    margin-left: 20%;
+    padding-left: 10px;
+}
+
+.title {
+    margin-left: 10%;
+}
+
+.terapeutas-unidade {
+    width: 1200;
+    padding: 50px 50px 50px 100px;
+    border-radius: 15px;
+    border: 2px solid rgba(223, 165, 217, 0);
+    background-color: #ffffff;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 8px 0px rgba(66, 32, 64, 0.15);
+    margin-top: 7%;
+    display: flex;
+}
+
+.terapeutas-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-bio-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.agendar {
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-family: "Raleway SemiBold", "Raleway", sans-serif;
+    border-radius: 15px;
+    font-size: 14px;
+    background-color: #dfa5d9;
+    width: 150px;
+    height: 40px;
+    color: white;
+}
+
+
+.perfil-valor-box {
+    display: flex;
+    align-items: flex-end;
+    height: 70px;
+}
+
+span.valor {
+    font-family: "Roboto Bold", "Roboto", sans-serif;
+    font-weight: 700;
+    color: #422040;
+    line-height: normal;
+    font-size: 16px;
+}
+
+.perfil-icon-box span {
+    font-family: "Raleway Medium", "Raleway", sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+    color: rgba(66, 32, 64, 0.7);
+    line-height: normal;
+    width: 700px;
+    font-size: 18px;
+}
+
+.perfil-icon-box {
+    display: flex;
+    align-items: center;
+}
+
+.perfil-icon-box a {
+    display: flex;
+    color: #422040;
+    font-family: "Raleway Medium", "Raleway", sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+    color: rgba(66, 32, 64, 0.7);
+    line-height: normal;
+}
+
+
+.user-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.img-trp {
+    margin-top: 6%;
+}
+
+h5 {
+    font-family: "Arial Bold", "Arial Normal", "Arial", sans-serif;
+    color: #422040;
+    font-size: 20px;
+    margin: 0;
+    white-space: nowrap;
+    height: 7%;
+}
+
+.trp li {
+    border: 1px solid #dfa5d9; 
+    border-radius: 5px; 
+    background-color: #dfa5d9;
+    color: #ffffff; 
+    font-family: "Raleway Medium", "Raleway", sans-serif; 
+    font-size: 14px; 
+    font-weight: 500; 
+    text-align: center; 
+    line-height: normal; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+ul {
+    display: flex;
+    flex: wrap;
+    white-space: nowrap;
+    padding: 0;
+    gap: 10px;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.subtitle {
+    display: flex;
+    gap: 1rem;
+    justify-content: left;
+    margin-top: 0.4rem;
+}
+h6 {
+    font-family: "Raleway Medium", "Raleway", sans-serif;
+    font-size: 12px;
+    white-space: nowrap;
+    margin-bottom: 0;
+    height: 5%;
+    margin-top: 0;
+}
+
+.label-trp {
+    margin: 7% 0 0 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1350px) {
+    .option {
+        columns: 1;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+    .box-search h4 {
+        margin-left: 15px;
+    }
+
+    #especialidade {
+        width: 270px;
+    }
+
+    .button-box {
+        margin-left: 10%;
+    }
+}
+
+
+
+

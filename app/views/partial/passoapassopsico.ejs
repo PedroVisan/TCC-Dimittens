@@ -1,0 +1,357 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+<title>Passo a Passo</title>
+<style>
+    .pap-main {
+        background-color: white;
+        height: max-content;
+        padding: 100px 0 100px 0;
+        width: 100vw;
+    }
+
+    .blocos-pap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px; /* Ajustado para uma distância lateral menor */
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 100px;
+        width: 100vw;
+    }
+
+    .bloco {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 300px; /* Define uma largura fixa */
+    }
+
+    .bloco-do-icon {
+        display: flex;
+        width: 170px;
+        height: 170px;
+        border-radius: 15px;
+        border: 3px solid #dfa5d9;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bloco-do-icon i {
+        font-size: 75px;
+        color: #dfa5d9;
+    }
+
+    .bloco p {
+        box-sizing: border-box;
+        font-family: "Raleway Bold", "Raleway", sans-serif;
+        font-weight: 700;
+        color: #422040;
+        text-align: center;
+        line-height: normal;
+        font-size: 16px;
+        width: 170px; /* Limita a largura do parágrafo ao tamanho do bloco */
+        word-wrap: break-word; /* Garante que o texto não ultrapasse a largura do bloco */
+        margin-top: 10px; /* Adiciona um espaçamento entre o ícone e o texto */
+    }
+
+    .circulo {
+        width: 45px; /* Ajustado para 45px */
+        height: 45px; /* Ajustado para 45px */
+        background-color: #dfa5d9;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 20px;
+        font-weight: bold;
+        position: absolute;
+        top: -25px; /* Ajusta a posição vertical do círculo */
+        left: calc(50% - 22.5px); /* Centraliza horizontalmente */
+    }
+
+    .button-blocos {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .button {
+        width: 670px;
+        height: 60px;
+        border-radius: 10px;
+        border: 1px solid #dfa5d9;
+        background-color: #dfa5d9;
+        box-sizing: border-box;
+        color: white;
+        font-size: 20px;
+        font-family: "Raleway SemiBold", "Raleway", sans-serif;
+        font-weight: 600;
+    }
+
+    .aviso {
+        margin-top: 120px;
+        margin-bottom: 3px;
+        font-family: "Raleway Medium", "Raleway", sans-serif;
+        font-weight: 500;
+        color: #422040;
+        text-align: center;
+        line-height: normal;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .logo-icon {
+        width: 95px;
+        height: 92px;
+        margin-right: 5px;
+    }
+
+    .h1-pap {
+        text-align: center;
+        padding-top: 120px;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+        font-weight: normal;
+        color: #422040;
+        line-height: normal;
+        font-size: 36px;
+        width: 90%;
+    }
+
+
+    @media (max-width: 646px) {
+        .blocos-pap {
+            justify-content: space-between; /* Espaço entre os blocos */
+        }
+
+        .bloco {
+            flex-basis: calc(50% - 15px); /* 2 blocos por linha com espaço entre */
+        }
+    }
+
+    @media (min-width: 600px) and (max-width: 800px) {
+        .bloco-do-icon {
+            width: 110px;
+            height: 110px;
+        }
+
+        .logo-icon {
+            width: 55px;
+            height: 52px;
+        }
+
+        .bloco-do-icon i {
+            font-size: 40px;
+        }
+
+        .h1-pap {
+            font-size: 28px;
+            width: 90%;
+            overflow-wrap: break-word;
+        }
+
+        .button {
+            width: 500px;
+        }
+
+        .aviso {
+            font-size: 16px;
+        }
+
+        .circulo {
+            width: 35px;
+            height: 35px;
+            font-size: 12px;
+            left: calc(52% - 22.5px); /* Centraliza horizontalmente */
+            top: -15px; /* Ajusta a posição vertical do círculo */
+        }
+    }
+
+    @media (min-width: 480px) and (max-width: 600px) {
+        .bloco-do-icon {
+            width: 90px;
+            height: 90px;
+        }
+
+        .logo-icon {
+            width: 45px;
+            height: 42px;
+        }
+
+        .bloco-do-icon i {
+            font-size: 40px;
+        }
+
+        .h1-pap {
+            font-size: 22px;
+            width: 100%;
+            overflow-wrap: break-word;
+        }
+
+        .button {
+            width: 400px;
+            font-size: 18px;
+        }
+
+        .aviso {
+            font-size: 14px;
+        }
+
+        .circulo {
+            width: 28px;
+            height: 28px;
+            font-size: 11px;
+            left: calc(55% - 22.5px); /* Centraliza horizontalmente */
+            top: -15px; /* Ajusta a posição vertical do círculo */
+        }
+    }
+
+    @media (min-width:400px) and (max-width: 480px) {
+        .bloco-do-icon {
+            width: 90px;
+            height: 90px;
+        }
+
+        .blocos-pap {
+            gap: 30px;
+            margin-top: 70px;
+        }
+
+        .bloco {
+            width: 50px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 38px;
+        }
+
+        .bloco-do-icon i {
+            font-size: 32px;
+        }
+
+        .h1-pap {
+            font-size: 18px;
+            width: 100%;
+            overflow-wrap: break-word;
+        }
+
+        .button {
+            width: 280px;
+            height: 40px;
+            font-size: 14px;
+        }
+
+        .aviso {
+            font-size: 10px;
+            margin-top: 50px;
+        }
+
+        .circulo {
+            width: 20px;
+            height: 20px;
+            font-size: 8px;
+            left: calc(57% - 22.5px); /* Centraliza horizontalmente */
+            top: -10px; /* Ajusta a posição vertical do círculo */
+        }
+
+        .bloco p {
+            font-size: 10px;
+            width: 90px;
+        }
+    }
+
+    @media (min-width:320px) and (max-width: 400px) {
+        .bloco-do-icon {
+            width: 60px;
+            height: 60px;
+        }
+
+        .logo-icon {
+            width: 30px;
+            height: 28px;
+        }
+
+        .bloco-do-icon i {
+            font-size: 22px;
+        }
+
+        .bloco {
+            width: 50px;
+        }
+
+        .blocos-pap {
+            padding: 0 50px 0 50px;
+        }
+
+        .h1-pap {
+            font-size: 18px;
+            width: 100%;
+            margin-top: -50px;
+            overflow-wrap: break-word;
+        }
+
+        .button {
+            width: 240px;
+            height: 35px;
+            font-size: 12px;
+        }
+
+        .aviso {
+            font-size: 8px;
+            margin-top: 50px;
+        }
+        .bloco p {
+            font-size: 11px;
+            width: 90px;
+        }
+
+        .circulo {
+            width: 20px;
+            height: 20px;
+            font-size: 8px;
+            left: calc(58% - 22.5px); /* Centraliza horizontalmente */
+            top: -10px; /* Ajusta a posição vertical do círculo */
+        }
+    }
+</style>
+</head>
+<body>
+<main>
+    <div class="pap-main">
+        <h1 class="h1-pap">PRIMEIROS PASSOS PSICÓLOGOS</h1>
+        <article class="blocos-pap">
+            <section class="bloco">
+                <div class="circulo">1</div>
+                <section class="bloco-do-icon"><i class="fa-solid fa-desktop"></i></section>
+                <p>Inicie a sessão em seu dispositivo móvel ou computador</p>
+            </section>
+            <section class="bloco">
+                <div class="circulo">2</div>
+                <section class="bloco-do-icon"><i class="fa-regular fa-user"></i></section>
+                <p>Procure um psicólogo de acordo com a sua necessidade</p>
+            </section>
+            <section class="bloco">
+                <div class="circulo">3</div>
+                <section class="bloco-do-icon"><i class="fa-solid fa-align-left"></i></section>
+                <p>Combinem Juntos como serão realizadas as consultas</p>
+            </section>
+            <section class="bloco">
+                <div class="circulo">4</div>
+                <section class="bloco-do-icon"><img src="imagens/logo-roxoclaro.png" alt="" class="logo-icon"></section>
+                <p>Faça o uso contínuo da plataforma e do tratamento, e veja a transformação!</p>
+            </section>
+        </article>
+        <p class="aviso">Em caso de qualquer dificuldade, contate o suporte da Dimittens.</p>
+        <article class="button-blocos">
+            <p></p>
+            <a href="#"><input type="button" class="button" value="Procurar meu psicólogo"></a>
+        </article>
+    </div>
+</main>
+</body>
+
+

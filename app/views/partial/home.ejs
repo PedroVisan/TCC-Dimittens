@@ -1,0 +1,33 @@
+
+
+<title>Dimittens</title>
+<link rel="stylesheet" href="css/home.css">
+</head>
+
+
+<% if (autenticado) { %>
+        <%- include("../partial/header") %>
+<% } else { %>
+        <%- include("../partial/headerunlogged") %>
+<% } %>
+
+<main style="background-color: #422040;">
+  
+
+    <%- include("../partial/quadrante-unlogged") %>
+
+
+    <% if (autenticado) { %>
+        <%- include("../partial/carroseltranstornos") %>
+    <% } %>
+
+    <%- include("../partial/passoapasso") %>
+
+    <%- include("../partial/planos") %>
+
+    <%- include("../partial/comentarios") %>
+
+    <%- include("../partial/rodape") %>
+
+</main>
+

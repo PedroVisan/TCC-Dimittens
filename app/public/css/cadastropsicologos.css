@@ -1,0 +1,128 @@
+body {
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0;
+}
+
+.logotipo img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.logotipo {
+    margin-top: 20px;
+    text-align: center;
+    height: 60px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.title {
+    font-size: 28px;
+    font-family: "Antialiased ", sans-serif;
+    font-weight: 600;
+    color: #333333;
+}
+
+.input-field {
+    width: 268px;
+    margin-top: 10px;
+}
+
+.input {
+    height: 49px;
+    width: 268px;
+    border-radius: 17px;
+    border: 1px solid rgba(121, 121, 121, 0.7);
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+label {
+    font-family: "Antialiased ", sans-serif;
+    color: #333333;
+    font-size: 14px;
+    align-self: flex-start;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 30px 80px 30px 80px;
+    background-color: #f7f7f7;
+    border-radius: 35px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.aviso-formatacao {
+    width: 280px;
+    display: flex;
+    color: #333333;
+    background-color: rgb(234, 233, 233);
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.continue {
+    text-align: center;
+}
+
+#continuar {
+    background-color: #422040;
+    height: 45px;
+    width: 268px;
+    border-radius: 35px;
+    font-family: "Antialiased", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    border: 1px solid;
+}
+
+.signup-conditions {
+    text-align: center;
+}
+
+.sign {
+    font-family: "Antialiased ", sans-serif;
+    font-weight: 500;
+    color: #333333;
+    font-size: 12px;
+}
+
+input::placeholder {
+    left: 6px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+hr {
+    width: 150px;
+    height: 1px;
+}

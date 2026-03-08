@@ -1,0 +1,99 @@
+<head>
+    <title>Login Psicólogos</title>
+    <link rel="stylesheet" href="css/loginpsicologos.css">
+</head>
+<body>
+    <main class="container">
+        <section class="logotipo">
+            <img src="imagens/logo-roxo.png" alt="" id="logo">
+        </section>
+        <h1>Bem Vindo(a) a Dimittens</h1>
+        <form action="/loginpsicologos" method="post" id="loginForm">
+            <section class="input-field">
+                <!-- CPF -->
+                <label for="userdocuments" id="lbcpf">CPF</label>
+                <input 
+                    type="text" 
+                    name="userdocuments" 
+                    id="userdocuments"
+                    class="inputsbox <%= locals.errorsList && locals.errorsList.userdocuments ? 'input-error' : '' %>" 
+                    placeholder="Digite seu CPF" 
+                    value="<%= locals.valores ? locals.valores.userdocuments : '' %>" 
+                    required
+                >
+                <% if (locals.errorsList && locals.errorsList.userdocuments) { %>
+                    <span class="error-msg"><%= locals.errorsList.userdocuments %></span>
+                <% } %>
+
+                <!-- CRP -->
+                <label for="usercrp" id="lbcrp">CRP</label>
+                <input 
+                    type="text" 
+                    name="usercrp" 
+                    id="usercrp"
+                    class="inputsbox <%= locals.errorsList && locals.errorsList.usercrp ? 'input-error' : '' %>" 
+                    placeholder="Digite seu CRP" 
+                    value="<%= locals.valores ? locals.valores.usercrp : '' %>" 
+                    required
+                >
+                <% if (locals.errorsList && locals.errorsList.usercrp) { %>
+                    <span class="error-msg"><%= locals.errorsList.usercrp %></span>
+                <% } %>
+
+                <!-- Senha -->
+                <label for="userpassword" id="lbpass">Senha</label>
+                <input 
+                    type="password" 
+                    name="userpassword" 
+                    id="userpassword"
+                    class="inputsbox <%= locals.errorsList && locals.errorsList.userpassword ? 'input-error' : '' %>" 
+                    placeholder="Digite sua senha" 
+                    required
+                >
+                <% if (locals.errorsList && locals.errorsList.userpassword) { %>
+                    <span class="error-msg"><%= locals.errorsList.userpassword %></span>
+                <% } %>
+
+                <p id="avisodesenha"><a href=".">Esqueceu sua senha?</a></p>
+            </section>
+
+            <section class="login-area">
+                <input type="submit" value="Entrar" id="entrar">
+            </section>
+        </form>
+
+        <div>
+            <span>OU</span>
+            <section class="social-fields">
+                <section class="social-field facebook">
+                    <a href="...">
+                        <button type="button" id="facebooklogin" class="buttoms">
+                            <img src="imagens/facebooklogo.png">
+                            <p class="pbuttom">Continuar com o Facebook</p>
+                        </button>
+                    </a>
+                </section>
+                <section class="social-field facebook">
+                    <a href="...">
+                        <button type="button" id="googlelogin" class="buttoms">
+                            <img src="imagens/googlelogo.png">
+                            <p class="pbuttom">Continuar com o Google</p>
+                        </button>
+                    </a>
+                </section>
+            </section>
+
+            <section class="login-conditions">
+                <p id="termos-de-serviço">
+                    Ao continuar, você concorda com os <br>
+                    <a href="#"><strong>Termos de Serviço</strong></a> da Dimittens e confirma que <br>leu a nossa <a href="#"><strong>Política de Privacidade</strong></a> 
+                </p>
+                <hr>
+                <p id="aviso-cadastro">
+                    Ainda não está cadastrado? <a href="cadastropsicologos"><strong>Crie uma conta</strong></a>
+                </p>
+            </section>
+        </div>
+        <script src="javascript/validacao.js"></script>
+    </main>
+</body>

@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Augustus;
+    src: url(AUGUSTUS.TTF);
+}
+
+h1 {
+    font-family: "Raleway Bold", "Raleway", sans-serif;
+    font-weight: 700;
+    color: #ec8d26;
+    text-align: center;
+    font-size: 47px;
+    margin-top: 50px;
+}
+
+hr {
+    width: 596px;
+    border: 1px solid #ec8d26;
+    margin-top: 15px;
+}
+
+.linha {
+    display: flex;
+    justify-content: center;
+}
+
+.infos-gerais {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subtit {
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    font-family: "Raleway Bold", "Raleway", sans-serif;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    font-size: 42px;
+    margin: 60px;
+}
+
+p {
+    width: 60vw;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-size: 22px;
+    margin: 15px;
+}
+
+.metricas-caixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 250px;
+    background-color: rgba(242, 242, 242, 0.8);
+    margin: 100px 0 100px 0;
+}
+
+.num-metri {
+    font-size: 29px;
+    font-family: "Raleway SemiBold", "Raleway", sans-serif;
+    font-weight: 600;
+    color: #ec8d26;
+    
+}
+
+.metricas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 250px;
+}
+
+.info-metri {
+    font-size: 20px;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    color: #422040;
+}
+
+.metricas-titulo {
+    font-size: 32px;
+    font-family: "Raleway Bold", "Raleway", sans-serif;
+    font-weight: 700;
+    color: #422040;
+    margin-bottom: 50px;
+    text-align: center;
+    padding-right: 110px;
+}
+
+.icone-titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box-funciona {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    gap: 70px;
+}
+
+.caixa {
+    width: 300px;
+    height: 245px;
+    border-radius: 30px;
+    border: 1px solid rgba(66, 32, 64, 0.05);
+    background-color: #ffffff;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px 0px rgba(66, 32, 64, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 30px 0 30px;
+}
+
+.caixa i {
+    font-size: 30px;
+    color: #ec8d26;
+    margin-bottom: 10px;
+}
+
+.caixa h3 {
+    margin-bottom: 10px;
+    color: #422040;
+    font-size: 18px;
+    font-family: "Raleway Bold", "Raleway", sans-serif;
+    font-weight: 700;
+}
+
+.p-cmf {
+    width: 110%;
+    word-wrap: break-word;
+    font-size: 14px;  box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    color: #422040;
+    text-align: center;
+}
+
+.como-funciona {
+    text-align: center;
+    font-size: 35px;
+    box-sizing: border-box;
+    font-family: "Raleway Bold", "Raleway", sans-serif;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 80px;
+}
+
+.sharepoint {
+    width: 100vw;
+    height: 250px;
+    margin-top: 100px;
+    background-color: rgba(242, 242, 242, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-shrpoint {
+    font-size: 15px;
+    text-align: center;
+    color: #422040;
+}
+
+.shrpoint-tit {
+    font-size: 30px;
+    font-family: "Raleway Bold", "Raleway", sans-serif;
+    font-weight: 700;
+    color: #422040;
+    margin-bottom: 20px;
+}
+
+.logo-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.logo-box h3 {
+    color: #422040;
+    font-family: Augustus;
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.logo-box img {
+    width: 50px;
+    height: 50px;
+}
+
+.sharepoint a {
+    color: #dfa5d9;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+

@@ -1,0 +1,68 @@
+
+    <title>Postagem</title>
+    <link rel="stylesheet" href="css/criarcomunidade.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <main class="main-criarpostagem">
+        <article class="box-post">
+            <section class="topo">
+                <section class="logo-close">
+                    <section class="topo-img"><img src="imagens/logo-laranja.png" alt=""></section>
+                    <section class="topo-icon"><i class="fa-solid fa-xmark"></i></section>
+                </section>
+                <section class="titulo-box">
+                    <h1 class="titulo">Criar Comunidade</h1>
+                </section>
+                <section class="divisoria-box">
+                    <hr class="divisoria-topo">
+                </section>
+            </section>
+    
+            <!-- Input para o Banner -->
+            <section class="input-file">
+                <label class="picture" for="picture__input" tabIndex="0">
+                    <span class="picture__image"></span>
+                </label>
+                <input type="file" name="picture__input" id="picture__input">
+            </section>
+    
+            <!-- Input Circular para Foto de Perfil -->
+            <section class="input-file profile-picture-wrapper">
+                <label class="profile-picture" for="profile__input" tabIndex="0">
+                    <span class="profile__image"><i class="fa fa-plus"></i></span>
+                </label>
+                <input type="file" name="profile__input" id="profile__input">
+            </section>
+    
+            <!-- Formulário -->
+            <form method="POST" action="/community">
+                <section class="input-label">
+                    <label for="input-text" class="label-inputs">Nome da Comunidade</label>
+                    <input type="text" placeholder="Adicione um nome" id="input-text">
+                </section>
+    
+                <section class="input-label">
+                    <label for="input-text" class="label-inputs">Biografia da Comunidade</label>
+                    <input type="text" placeholder="Adicione a biografia" id="input-text-bio">
+                </section>
+    
+                <section>
+                    <label for="tipodepost" class="label-inputs">Abordagens da comunidade</label>
+                    <select name="tipodepost" id="tipodepost">
+                        <option value="info" disabled selected>Escolha o tipo da sua postagem</option>
+                        <option value="pergunta">Pergunta</option>
+                        <option value="enquete">Enquete</option>
+                    </select>
+                </section>
+    
+                <section class="submit-box">
+                    <input type="submit" value="Postar" id="postar">
+                </section>
+            </form>
+        </article>
+    </main>    
+    <script src="javascript/criarpostagem.js"></script>
+</body>
+</html>
+

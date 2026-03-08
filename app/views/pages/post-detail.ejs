@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Metadados -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= post.TITULO_POSTAGEM %></title>
+
+    <!-- Bootstrap CSS incluído individualmente -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Seu CSS personalizado (se houver) -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <%- include('../partial/header') %>
+
+    <div class="container mt-4">
+        <a href="/community/<%= communityId %>/posts" class="btn btn-secondary mb-3">Voltar para a lista</a>
+        <div class="card mb-4">
+            <% if (post.IMAGEM_POSTAGEM) { %>
+                <img src="/uploads/<%= post.IMAGEM_POSTAGEM %>" class="card-img-top" alt="Imagem do post">
+            <% } %>
+            <div class="card-body">
+                <h2 class="card-title"><%= post.TITULO_POSTAGEM %></h2>
+                <p class="card-text"><%= post.CONTEUDO_POSTAGEM %></p>
+            </div>
+            <div class="card-footer text-muted">
+                <small>
+                    <strong>Autor:</strong> <%= post.AUTOR_NOME %> |
+                    <strong>Tipo:</strong> <%= post.TIPO_POSTAGEM %> |
+                    <strong>Data:</strong> <%= new Date(post.DATA_POSTAGEM).toLocaleString() %>
+                </small>
+            </div>
+        </div>
+
+        <!-- Botão para comentar -->
+        <div class="mb-4">
+            <h3>Comentários</h3>
+            <% if (autenticado) { %>
+                <form action="/community/<%= communityId %>/posts/<%= post.ID_POSTAGEM %>/comments" method="POST">
+                    <div class="form-group">
+                        <textarea name="textoComentario" class="form-control" rows="3" placeholder="Escreva seu comentário..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Comentar</button>
+                </form>
+            <% } else { %>
+                <p><a href="/login">Faça login</a> para comentar.</p>
+            <% } %>
+        </div>
+
+        <% if (comments.length > 0) { %>
+            <ul class="list-group">
+                <% comments.forEach(comment => { %>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="comment-content">
+                            <p>
+                                <strong><%= comment.AUTOR_NOME %></strong> comentou em 
+                                <%= new Date(comment.DATA_COMENTARIO).toLocaleString() %>:
+                            </p>
+                            <p><%= comment.TEXTO_COMENTARIO %></p>
+                        </div>
+                        <div class="comment-actions text-center">
+                            <button class="btn btn-outline-success btn-sm like-button" data-id="<%= comment.ID_COMENTARIO %>">
+                                <i class="fas fa-thumbs-up"></i> <span class="like-count"><%= comment.CURTIDAS_POSITIVAS_COMENTARIO || 0 %></span>
+                            </button>
+                            <button class="btn btn-outline-danger btn-sm dislike-button" data-id="<%= comment.ID_COMENTARIO %>">
+                                <i class="fas fa-thumbs-down"></i> <span class="dislike-count"><%= comment.CURTIDAS_NEGATIVAS_COMENTARIO || 0 %></span>
+                            </button>
+                        </div>
+                    </li>
+                <% }) %>
+            </ul>
+        <% } else { %>
+            <p class="text-muted">Nenhum comentário ainda.</p>
+        <% } %>
+
+    <!-- Bootstrap JS e dependências (se necessário) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const likeButtons = document.querySelectorAll('.like-button');
+        const dislikeButtons = document.querySelectorAll('.dislike-button');
+
+        likeButtons.forEach(button => {
+            button.addEventListener('click', async () => {
+                const commentId = button.getAttribute('data-id');
+                try {
+                    const response = await fetch(`/comments/${commentId}/like`, { method: 'POST' });
+                    if (response.ok) {
+                        const likeCount = button.querySelector('.like-count');
+                        likeCount.textContent = parseInt(likeCount.textContent) + 1;
+                    }
+                } catch (error) {
+                    console.error('Erro ao curtir comentário:', error);
+                }
+            });
+        });
+
+        dislikeButtons.forEach(button => {
+            button.addEventListener('click', async () => {
+                const commentId = button.getAttribute('data-id');
+                try {
+                    const response = await fetch(`/comments/${commentId}/dislike`, { method: 'POST' });
+                    if (response.ok) {
+                        const dislikeCount = button.querySelector('.dislike-count');
+                        dislikeCount.textContent = parseInt(dislikeCount.textContent) + 1;
+                    }
+                } catch (error) {
+                    console.error('Erro ao descurtir comentário:', error);
+                }
+            });
+        });
+    });
+</script>
+</html>

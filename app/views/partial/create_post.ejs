@@ -1,0 +1,29 @@
+<%- include('../partial/header') %>
+
+<div class="container">
+    <h1 class="page-title">Criar Postagem</h1>
+    <form action="/community/<%= comunidadeId %>/posts" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="titulo">Título</label>
+            <input type="text" id="titulo" name="titulo" placeholder="Título da postagem" required>
+        </div>
+        <div class="form-group">
+            <label for="conteudo">Conteúdo</label>
+            <textarea id="conteudo" name="conteudo" rows="5" placeholder="Escreva o conteúdo da postagem" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="tipo">Tipo de Postagem</label>
+            <select id="tipo" name="tipo" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="pergunta">Pergunta</option>
+                <option value="enquete">Enquete</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="imagem">Imagem (opcional)</label>
+            <input type="file" id="imagem" name="imagem">
+        </div>
+        <input type="hidden" name="comunidadeId" value="<%= comunidadeId %>">
+        <button type="submit" class="btn btn-primary">Postar</button>
+    </form>
+</div>

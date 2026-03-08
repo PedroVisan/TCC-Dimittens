@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="css/perfilpsic.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<script defer src="javascript/perfilpsic.js"></script>
+</head>
+<body>
+<article class="info-1">
+<section>
+<i id="user" class="fa-solid fa-circle-user"></i>
+<h2>Usuário X</h2>
+</section>
+<hr>
+<section class="opt">
+<input type="radio" id="edit" name="options" class="radio" />
+<label for="edit" class="options">
+<h3><i id="pen" class="fa-regular fa-pen-to-square"></i> Editar Perfil</h3>
+</label>
+ 
+            <input type="radio" id="consultations" name="options" class="radio" />
+<label for="consultations" class="options">
+<h3><i id="calendar" class="fa-regular fa-calendar-check"></i> Consultas</h3>
+</label>
+ 
+            <input type="radio" id="saved" name="options" class="radio" />
+<label for="saved" class="options">
+<h3><i id="save" class="fa-regular fa-bookmark"></i> Salvos</h3>
+</label>
+ 
+            <input type="radio" id="help" name="options" class="radio" />
+<label for="help" class="options">
+<h3><i id="help" class="fa-solid fa-circle-exclamation"></i> Ajuda</h3>
+</label>
+
+<input type="radio" id="logout" name="options" class="radio" />
+                <label for="logout" class="options">
+                    <a href="logout">
+                        <h3><i id="left" class="fa-regular fa-circle-left"></i> Sair da Conta</h3>
+                    </a>
+                </label>
+</section>
+</article>
+ 
+    <article class="info-2">
+<section class="editarperf"><%- include("../partial/editeseuperfilpsic") %></section>
+<section class="consultpsic"><%- include("../partial/consultaspsic") %></section>
+<section class="salvopsic"><%- include("../partial/salvospsic") %></section>
+<section class="needhelp"><%- include("../partial/precisadeajudapsic") %></section>
+</article>
+</body>
+</html>
